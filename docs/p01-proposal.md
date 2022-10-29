@@ -33,3 +33,10 @@ Open Defecate:  https://apps.who.int/gho/data/node.main.WSHOPENDEFECATION?lang=e
 Cholera: https://apps.who.int/gho/data/node.main.175?lang=en
 Diarrhea: https://apps.who.int/gho/data/view.main.ghe2002015-CH3?lang=en
 Poverty: https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
+
+## Expected Implications
+
+Assuming that areas that are poverty stricken have less access to clean water, the people in the affected areas have a higher likelihood of being infected with diseases such as cholera or diarrheal disease.
+**For technologists/ experts in the health and sanitation fields**, the focus would need to shift more on how to provide poverty-stricken areas with simple necessities such as access to clean water and sanitation services. Technologists would need to put out products that are affordable and can allow these areas to boil their own water so that they won’t contract such diseases.
+**For designers**, implications would likely be designing affordable products and educational services for these areas to learn how. Designers would need to craft methods that would help “fix” the structural barriers these communities have to safe sanitization methods.
+**For policy makers**, they need to write policy that makes sanitation methods readily available. Clean water and sanitary cleaning methods are not privileges; everyone should have the right to access these methods. Policy needs to be written whether that’s by increasing funding for materials to educate and give access to clean water and sanitation services, or by providing more job opportunities so people can afford to live healthily and without risk of contracting diseases due to the lack of sanitation.
