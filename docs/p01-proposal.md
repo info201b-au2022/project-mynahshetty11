@@ -122,7 +122,6 @@ This sources gives an overviews on how the world is trying to better water quali
 
 #4
 Djantchiemo, S., &amp; White, T. (2022, March 25). Figure of the week: Access to water, sanitation, and hygiene (WASH) services in sub-Saharan africa. Brookings. Retrieved October 31, 2022, from https://www.brookings.edu/blog/africa-in-focus/2022/03/25/figure-of-the-week-access-to-water-sanitation-and-hygiene-wash-services-in-sub-saharan-africa/
-<<<<<<< HEAD
 
 #5
 World Health Organization. (n.d.). Gho | by category | handwashing with SOAP - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.WSHHYGIENE?lang=en
