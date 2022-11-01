@@ -1,4 +1,4 @@
-# Water, and it's Factors in Different Countries: Project Proposal
+# Title of your Project: Project Proposal
 
 **TODO**: Edit this file. Your project proposal goes here.
 
@@ -7,6 +7,7 @@ For what to do, see the [`../instructions/`](../instructions/) directory, specif
 * [Design Brief](../instructions/project-design-brief.pdf)
 * [Project Proposal Requirements](../instructions/p01-proposal-requirements.md)
 
+<<<<<<< HEAD
 
 ## Keywords
 
@@ -16,6 +17,8 @@ Keywords: Sanitation Services, Access to Clean Water, Diarrheal Diseases
 =======
 =====
 >>>>>>> 8d019878b81bdd7b2396e3ec5f4d05a22405b475
+=======
+>>>>>>> 9033e075f1461e954a3dc6e4c74ce23139f05219
 ## Code name: Water
 
 ## Project Title: Water, and it's Factors in Different Countries
@@ -29,7 +32,10 @@ Keywords: Sanitation Services, Access to Clean Water, Diarrheal Diseases
 ## Affiliation: Technical Foundations of Informatics - The Information School - University of Washington
 
 ## Date: Autumn 2022
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9033e075f1461e954a3dc6e4c74ce23139f05219
 
 ## Introduction
 
@@ -51,11 +57,28 @@ We ask this question to research if there is a relation (or correlation) between
 
 We ask this question to assess the strength of the relationship between poverty and hygiene. This helps with addressing the question of what we must do to help increase equitable access to sanitation services, as addressing the issue of poverty may intersect with assisting people's ability to afford hygienic services.
 
+<<<<<<<<<<< EDIT THIS STUFF HERE! The person in charge of writing the dataset should move these URLs to each related dataset. We might not need all of them. ALso feel free to add questions in the questions section. 3 is technically good enough cuz the four person example had 3 questions, but ymmv>>>>>>>>>>>>>>>>
+Handwash: https://apps.who.int/gho/data/node.main.WSHHYGIENE?lang=en
+Open Defecate:  https://apps.who.int/gho/data/node.main.WSHOPENDEFECATION?lang=en
+Cholera: https://apps.who.int/gho/data/node.main.175?lang=en
+Diarrhea: https://apps.who.int/gho/data/view.main.ghe2002015-CH3?lang=en
+Poverty: https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
 
 ## The Dataset
 
-Our dataset is related to our project domain because it illustrates the number of cases of disease to a country, how many people fall under the poverty line, open defection rates, and handwashing rates. This can help us answer our questions on how poverty, access to clean water and sanitation methods, and diagnosis of cholera/ diarrheal disease are correlated.
+| File Name  | Number of rows|  Number of Variables    |
+| :---        |    :----:   |          ---: |
+| data_cholera_infection_rate.csv |          |          |
+|data_diarrhea_death_rate.csv   |       |                |
+|data_handwash.csv  |       |               |
+data_poverty.csv |        |                              |
+data_water_sanitation_hygeine.xlsx	|        |            |
 
+
+Our dataset is related to our project domain because it illustrates the number of cases of disease to a country, how many people fall under the poverty line, open defection rates, and handwashing rates. This can help us answer our questions on how poverty, access to clean water and sanitation methods, and diagnosis of cholera/ diarrheal disease are related.
+
+
+<<<<<<< HEAD
 ### Dataset Citations
   World Health Organization. (n.d.). Gho | by category | handwashing with SOAP - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.WSHHYGIENE?lang=en
 
@@ -67,6 +90,8 @@ Our dataset is related to our project domain because it illustrates the number o
 
   Poverty rate by country 2022. (n.d.). Retrieved October 31, 2022, from https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
 
+=======
+>>>>>>> 9033e075f1461e954a3dc6e4c74ce23139f05219
 ## Expected Implications
 
 Assuming that areas that are poverty stricken have less access to clean water, the people in the affected areas have a higher likelihood of being infected with diseases such as cholera or diarrheal disease.
@@ -107,9 +132,9 @@ Indirect: The government, who are affected by the opinion of their citizens. The
 
 ## Limitations
 
-A major limitation for this project is the possible existence of confounding factors. For example, natural disasters, civil unrest, or political instability could lead to lack of medicine and food, and therefore contribute to high infant/child mortality. Furthermore, the Cholera virus might be indigenous or dominant in certain areas of the world, which would influence the amount of cholera cases independently from the sanitation level. For example, a area with good sanitation might have a higher incidence of Cholera virus than somewhere else simply because the Cholera virus is more dominant in that area. Another limitation for this project is how it only focuses on two diseases, while unclean water and poverty could possibly be linked to many more. While it would be helpful to establish two connections, establishing a systemic connection between poverty, unclean water, and disease could have much larger implications. Also, having just two connections makes it more likely that this trend is simply an outlier, and could hide the truth about these alleged connections.
+A major limitation for this project is the possible existence of confounding factors. For example, natural disasters, civil unrest, or political instability could lead to lack of medicine and food, and therefore contribute to high infant/child mortality. Furthermore, the Cholera virus might be indigenous or dominant in certain areas of the world, which would influence the amount of cholera cases independently from the sanitation level. For example, an area with good sanitation might have a higher incidence of Cholera virus than somewhere else simply because the Cholera virus is more dominant in that area. Another limitation for this project is how it only focuses on two diseases, while unclean water and poverty could possibly be linked to many more. While it would be helpful to establish two connections, establishing a systemic connection between poverty, unclean water, and disease could have much larger implications. Also, having just two connections makes it more likely that this trend is simply an outlier, and could hide the truth about these alleged connections.
 
-## Sources
+Sources:
 
 #1
 MediLexicon International. (n.d.). The impact of water poverty in the United States. Medical News Today. Retrieved October 31, 2022, from https://www.medicalnewstoday.com/articles/how-water-poverty-impacts-public-health-in-the-us
@@ -119,30 +144,13 @@ This illustrates that even though the US is a 1st world country, water still goe
 #2
 Djantchiemo, S., &amp; White, T. (2022, March 25). Figure of the week: Access to water, sanitation, and hygiene (WASH) services in sub-Saharan africa. Brookings. Retrieved October 31, 2022, from https://www.brookings.edu/blog/africa-in-focus/2022/03/25/figure-of-the-week-access-to-water-sanitation-and-hygiene-wash-services-in-sub-saharan-africa/
 
+
 This source presents sources about Africa as a continent, comparing it to different places around the world. Overall, it concludes that the water facilities are below average. It targets a specific problem (Covid-19) which affected the water and hygiene quality of many countries in Africa.
 
 
 #3
 
+
 https://www.worldbank.org/en/topic/water/publication/wash-poverty-diagnostic
 
 This sources gives an overviews on how the world is trying to better water quality services. It focuses on regions that are in poverty.
-
-#4
-Djantchiemo, S., &amp; White, T. (2022, March 25). Figure of the week: Access to water, sanitation, and hygiene (WASH) services in sub-Saharan africa. Brookings. Retrieved October 31, 2022, from https://www.brookings.edu/blog/africa-in-focus/2022/03/25/figure-of-the-week-access-to-water-sanitation-and-hygiene-wash-services-in-sub-saharan-africa/
-<<<<<<< HEAD
-
-#5
-World Health Organization. (n.d.). Gho | by category | handwashing with SOAP - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.WSHHYGIENE?lang=en
-
-#6
-World Health Organization. (n.d.). Gho | by category | open defecation - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.WSHOPENDEFECATION?lang=en
-
-#7
-World Health Organization. (n.d.). Gho | by category | number of reported cases - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.175?lang=en
-
-#8
-World Health Organization. (n.d.). Gho | by category | rate of deaths by country - diarrhoeal diseases. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/view.main.ghe2002015-CH3?lang=en
-
-#8
-Poverty Rate by Country 2022. Poverty rate by country 2022. (n.d.). Retrieved October 31, 2022, from https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
