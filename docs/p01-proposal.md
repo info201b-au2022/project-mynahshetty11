@@ -84,8 +84,8 @@ We ask this question to assess the strength of the relationship between poverty 
 
 ## The Dataset
 
-
 Our dataset is related to our project domain because it illustrates the number of cases of disease to a country, how many people fall under the poverty line, open defection rates, and handwashing rates. This can help us answer our questions on how poverty, access to clean water and sanitation methods, and diagnosis of cholera/ diarrheal disease are correlated.
+
 =======
 | File Name  | Number of rows|  Number of Variables    |
 | :---        |    :----:   |          ---: |
