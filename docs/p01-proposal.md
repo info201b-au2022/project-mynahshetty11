@@ -157,3 +157,7 @@ World Health Organization. (n.d.). Gho | by category | rate of deaths by country
 
 #8
 Poverty Rate by Country 2022. Poverty rate by country 2022. (n.d.). Retrieved October 31, 2022, from https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
+
+### Appendix A: Questions
+1. What should we do if sometimes our datasets don't load through?
+2. What format should we use for citations?
