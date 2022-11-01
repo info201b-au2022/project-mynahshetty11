@@ -1,4 +1,4 @@
-# Title of your Project: Project Proposal
+# Water, and it's Factors in Different Countries: Project Proposal
 
 **TODO**: Edit this file. Your project proposal goes here.
 
@@ -12,6 +12,10 @@ For what to do, see the [`../instructions/`](../instructions/) directory, specif
 
 Keywords: Sanitation Services, Access to Clean Water, Diarrheal Diseases
 
+<<<<<<< HEAD
+=======
+=====
+>>>>>>> 8d019878b81bdd7b2396e3ec5f4d05a22405b475
 ## Code name: Water
 
 ## Project Title: Water, and it's Factors in Different Countries
@@ -50,7 +54,7 @@ We ask this question to assess the strength of the relationship between poverty 
 
 ## The Dataset
 
-Our dataset is related to our project domain because it illustrates the number of cases of disease to a country, how many people fall under the poverty line, open defection rates, and handwashing rates. This can help us answer our questions on how poverty, access to clean water and sanitation methods, and diagnosis of cholera/ diarrheal disease are related.
+Our dataset is related to our project domain because it illustrates the number of cases of disease to a country, how many people fall under the poverty line, open defection rates, and handwashing rates. This can help us answer our questions on how poverty, access to clean water and sanitation methods, and diagnosis of cholera/ diarrheal disease are correlated.
 
 ### Dataset Citations
   World Health Organization. (n.d.). Gho | by category | handwashing with SOAP - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.WSHHYGIENE?lang=en
@@ -126,6 +130,7 @@ This sources gives an overviews on how the world is trying to better water quali
 
 #4
 Djantchiemo, S., &amp; White, T. (2022, March 25). Figure of the week: Access to water, sanitation, and hygiene (WASH) services in sub-Saharan africa. Brookings. Retrieved October 31, 2022, from https://www.brookings.edu/blog/africa-in-focus/2022/03/25/figure-of-the-week-access-to-water-sanitation-and-hygiene-wash-services-in-sub-saharan-africa/
+<<<<<<< HEAD
 
 #5
 World Health Organization. (n.d.). Gho | by category | handwashing with SOAP - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.WSHHYGIENE?lang=en
