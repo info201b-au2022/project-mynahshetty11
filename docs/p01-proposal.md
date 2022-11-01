@@ -31,6 +31,37 @@ Keywords: Sanitation Services, Access to Clean Water, Diarrheal Diseases
 
 Access to clean water and sanitation is a privilege that most first world countries have. However, not all countries in the world are able to provide sanitation services to some or all of their citizens. Additionally, not all people in the world are able to afford clean water and sanitation. As a result, the people who can't afford these services have resort to less hygienic means, including using unclean water, hand washing without soap, open defecation, and more. Clean water and sanitation services are important because they help promote good hygiene, and prevent germs and diseases from spreading. Unclean water and sanitation services may not only be ineffective against preventing diseases and infections; they may also cause them, as many people die from diarrhea and cholera caused by drinking unclean water. With this in mind, we have decided to research the issue of inequitable access to sanitation services.
 
+## Problem Domain
+
+Use short sub-sections to describe your topic and the setting (that is, the sociotechnical situation), including project framing, human values, direct and indirect stakeholders, possible harms and benefits. See the Design Brief, section B.3. Note: You must include three citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ). You may find it helpful to include a figure. (About 400 words.)
+
+The sub-sections can be split into:
+
+- Sanitation services
+- Drinking water services
+- Handwashing with soap
+- Open defecation
+
+The data examines the many sources of water used for hygiene, and how the quality of water affects the spread of disease. Water is a vital part in health, and is something that needs to be addressed in communities. In our project, we look to explore countries that are struggling with water services, and focusing on pointing out patterns throughout those countries. We plan to visualize a series of graphs, as well as citing evidence from the statistics that we find.
+
+The human values that this addresses is:
+
+- community
+- power
+- justice
+- service
+- health
+
+Harm: Through tackling the problems that are associated with water quality, there would be a lot less diseases being spread, and thus deaths. One harm with water quality is that a lot of the conditions stem from poverty. Because of this, solutions can be hard to come up with as a lot comes from completely changing the infrastructure.
+
+Benefit: A lot of death and sickness can be avoided with better water quality amongst all countries. Overall, a benefit involves ethics, ensuring that clean water is a basic human right. It is the right thing to do to advocate.
+
+Stakeholders:
+
+Direct: The people directly affected would be the ones that are using the water systems. This could be families, people, or other inhabitants.
+
+Indirect: The government, who are affected by the opinion of their citizens. The workers that provide the facilities as they are the ones monitoring it.
+
 ## Questions
 
 For our project, we decided to ask the following questions:
@@ -80,36 +111,7 @@ Assuming that areas that are poverty stricken have less access to clean water, t
 **For designers**, implications would likely be designing affordable products and educational services for these areas to learn how. Designers would need to craft methods that would help “fix” the structural barriers these communities have to safe sanitization methods.
 **For policy makers**, they need to write policy that makes sanitation methods readily available. Clean water and sanitary cleaning methods are not privileges; everyone should have the right to access these methods. Policy needs to be written whether that’s by increasing funding for materials to educate and give access to clean water and sanitation services, or by providing more job opportunities so people can afford to live healthily and without risk of contracting diseases due to the lack of sanitation.
 
-## Problem Domain
 
-Use short sub-sections to describe your topic and the setting (that is, the sociotechnical situation), including project framing, human values, direct and indirect stakeholders, possible harms and benefits. See the Design Brief, section B.3. Note: You must include three citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ). You may find it helpful to include a figure. (About 400 words.)
-
-The sub-sections can be split into:
-
-- Sanitation services
-- Drinking water services
-- Handwashing with soap
-- Open defecation
-
-The data examines the many sources of water used for hygiene, and how the quality of water affects the spread of disease. Water is a vital part in health, and is something that needs to be addressed in communities. In our project, we look to explore countries that are struggling with water services, and focusing on pointing out patterns throughout those countries. We plan to visualize a series of graphs, as well as citing evidence from the statistics that we find.
-
-The human values that this addresses is:
-
-- community
-- power
-- justice
-- service
-- health
-
-Harm: Through tackling the problems that are associated with water quality, there would be a lot less diseases being spread, and thus deaths. One harm with water quality is that a lot of the conditions stem from poverty. Because of this, solutions can be hard to come up with as a lot comes from completely changing the infrastructure.
-
-Benefit: A lot of death and sickness can be avoided with better water quality amongst all countries. Overall, a benefit involves ethics, ensuring that clean water is a basic human right. It is the right thing to do to advocate.
-
-Stakeholders:
-
-Direct: The people directly affected would be the ones that are using the water systems. This could be families, people, or other inhabitants.
-
-Indirect: The government, who are affected by the opinion of their citizens. The workers that provide the facilities as they are the ones monitoring it.
 
 ## Limitations
 
