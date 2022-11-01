@@ -19,10 +19,7 @@ For what to do, see the [`../instructions/`](../instructions/) directory, specif
 
 ## Abstract
 Our main question is if their is a correlation between poverty, access to clean water and sanitation methods, and diagnosis of disease and infection.
-This question is important because lots of third world countries don't have proper access to clean water and sanitation services so people in these areas may be at high risk of contracting diseases such as cholera, and diarrheal disease. Analyzing this correlation may lead to change access to clean water and sanitation in these countries.
-To address the question, we will analyze each data set (poverty rate, handwash rate, diarrheal death rate, and cholera infection rate) and analyze the correlations we see between these data sets.
-We are concerned with the amount of data in each data set, because our data sets account for mostly all countries in the world and then organize them by different categories so the amount of data can lead to information overload.
-To address this concern, we plan to organize our data in ways that allows for viewers to see direct correlations between datasets.
+This question is important because lots of third world countries don't have proper access to clean water and sanitation services so people in these areas may be at high risk of contracting diseases such as cholera, and diarrheal disease. Analyzing this correlation may lead to change access to clean water and sanitation in these countries. To address the question, we will analyze each data set (poverty rate, handwash rate, diarrheal death rate, and cholera infection rate) and analyze the correlations we see between these data sets.
 
 ## Keywords
 
