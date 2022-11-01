@@ -25,9 +25,16 @@ Keywords: Sanitation Services, Access to Clean Water, Diarrheal Diseases
 
 ## Date: Autumn 2022
 
+## Abstract
+Our main question is if their is a correlation between poverty, access to clean water and sanitation methods, and diagnosis of disease and infection.
+This question is important because lots of third world countries don't have proper access to clean water and sanitation services so people in these areas may be at high risk of contracting diseases such as cholera, and diarrheal disease. Analyzing this correlation may lead to change access to clean water and sanitation in these countries.
+To address the question, we will analyze each data set (poverty rate, handwash rate, diarrheal death rate, and cholera infection rate) and analyze the correlations we see between these data sets.
+We are concerned with the amount of data in each data set, because our data sets account for mostly all countries in the world and then organize them by different categories so the amount of data can lead to information overload.
+To address this concern, we plan to organize our data in ways that allows for viewers to see direct correlations between datasets.
+
 ## Introduction
 
-Access to clean water and sanitation is a privilege that most first world countries have. However, not all countries in the world are able to provide sanitation services to some or all of their citizens. Additionally, not all people in the world are able to afford clean water and sanitation. As a result, the people who can't afford these services have resort to less hygienic means, including using unclean water, hand washing without soap, open defecation, and more. Clean water and sanitation services are important because they help promote good hygiene, and prevent germs and diseases from spreading. Unclean water and sanitation services may not only be ineffective against preventing diseases and infections; they may also cause them, as many people die from diarrhea and cholera caused by drinking unclean water. With this in mind, we have decided to research the issue of inequitable access to sanitation services.
+Access to clean water and sanitation is a privilege that most first world countries have. However, not all countries in the world are able to provide sanitation services to some or all of their citizens. Additionally, not all people in the world are able to afford clean water and sanitation. As a result, the people who can't afford these services have resorted to less hygienic means, including using unclean water, hand washing without soap, open defecation, and more. Clean water and sanitation services are important because they help promote good hygiene, and prevent germs and diseases from spreading. Unclean water and sanitation services may not only be ineffective against preventing diseases and infections; they may also cause them, as many people die from diarrhea and cholera caused by drinking unclean water. With this in mind, we have decided to research the issue of inequitable access to sanitation services.
 
 
 ## Problem Domain
