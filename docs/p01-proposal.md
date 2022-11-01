@@ -48,6 +48,9 @@ Cholera: https://apps.who.int/gho/data/node.main.175?lang=en
 Diarrhea: https://apps.who.int/gho/data/view.main.ghe2002015-CH3?lang=en
 Poverty: https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
 
+## The Dataset
+Our dataset is related to our project domain because it
+
 ## Expected Implications
 
 Assuming that areas that are poverty stricken have less access to clean water, the people in the affected areas have a higher likelihood of being infected with diseases such as cholera or diarrheal disease.
@@ -89,18 +92,18 @@ Indirect: The government, who are affected by the opinion of their citizens. The
 Sources:
 
 #1
-https://www.medicalnewstoday.com/articles/how-water-poverty-impacts-public-health-in-the-us
+MediLexicon International. (n.d.). The impact of water poverty in the United States. Medical News Today. Retrieved October 31, 2022, from https://www.medicalnewstoday.com/articles/how-water-poverty-impacts-public-health-in-the-us
 
 This illustrates that even though the US is a 1st world country, water still goes untreated because of poverty and mismanagement. This situation is much worse in countries that are lacking in economy and power.
 
 #2
-
-https://www.brookings.edu/blog/africa-in-focus/2022/03/25/figure-of-the-week-access-to-water-sanitation-and-hygiene-wash-services-in-sub-saharan-africa/
+Djantchiemo, S., &amp; White, T. (2022, March 25). Figure of the week: Access to water, sanitation, and hygiene (WASH) services in sub-Saharan africa. Brookings. Retrieved October 31, 2022, from https://www.brookings.edu/blog/africa-in-focus/2022/03/25/figure-of-the-week-access-to-water-sanitation-and-hygiene-wash-services-in-sub-saharan-africa/
 
 This source presents sources about Africa as a continent, comparing it to different places around the world. Overall, it concludes that the water facilities are below average. It targets a specific problem (Covid-19) which affected the water and hygiene quality of many countries in Africa.
 
 
 #3
+HEAD
 
 https://www.worldbank.org/en/topic/water/publication/wash-poverty-diagnostic
 
