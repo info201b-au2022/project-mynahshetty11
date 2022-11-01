@@ -47,12 +47,6 @@ We ask this question to research if there is a relation (or correlation) between
 
 We ask this question to assess the strength of the relationship between poverty and hygiene. This helps with addressing the question of what we must do to help increase equitable access to sanitation services, as addressing the issue of poverty may intersect with assisting people's ability to afford hygienic services.
 
-&&&&&&&&&&& EDIT THIS STUFF HERE! The person in charge of writing the dataset should move these URLs to each related dataset. We might not need all of them. ALso feel free to add questions in the questions section. 3 is technically good enough cuz the four person example had 3 questions, but ymmv&&&&&&&&&&&&&&
-Handwash: https://apps.who.int/gho/data/node.main.WSHHYGIENE?lang=en
-Open Defecate:  https://apps.who.int/gho/data/node.main.WSHOPENDEFECATION?lang=en
-Cholera: https://apps.who.int/gho/data/node.main.175?lang=en
-Diarrhea: https://apps.who.int/gho/data/view.main.ghe2002015-CH3?lang=en
-Poverty: https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
 
 ## The Dataset
 
