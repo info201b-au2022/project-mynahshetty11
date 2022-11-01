@@ -35,7 +35,7 @@ Diarrhea: https://apps.who.int/gho/data/view.main.ghe2002015-CH3?lang=en
 Poverty: https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
 
 ## The Dataset
-Our dataset is related to our project domain
+Our dataset is related to our project domain because it 
 
 ## Expected Implications
 
