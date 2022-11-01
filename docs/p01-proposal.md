@@ -7,14 +7,6 @@ For what to do, see the [`../instructions/`](../instructions/) directory, specif
 * [Design Brief](../instructions/project-design-brief.pdf)
 * [Project Proposal Requirements](../instructions/p01-proposal-requirements.md)
 
-
-## Keywords
-
-Keywords: Sanitation Services, Access to Clean Water, Diarrheal Diseases
-## Code name: Water
-
-## Project Title: Water, and it's Factors in Different Countries
-
 ## Authors:
 - Ryan Louie (rlouie21@uw.edu)
 - Christopher Chen (cmchen22@uw.edu)
@@ -25,9 +17,18 @@ Keywords: Sanitation Services, Access to Clean Water, Diarrheal Diseases
 
 ## Date: Autumn 2022
 
+## Abstract
+Our main question is if their is a correlation between poverty, access to clean water and sanitation methods, and diagnosis of disease and infection.
+This question is important because lots of third world countries don't have proper access to clean water and sanitation services so people in these areas may be at high risk of contracting diseases such as cholera, and diarrheal disease. Analyzing this correlation may lead to change access to clean water and sanitation in these countries. To address the question, we will analyze each data set (poverty rate, handwash rate, diarrheal death rate, and cholera infection rate) and analyze the correlations we see between these data sets.
+
+## Keywords
+
+Keywords: Sanitation Services, Access to Clean Water, Diarrheal Diseases
+### Code name: Water
+
 ## Introduction
 
-Access to clean water and sanitation is a privilege that most first world countries have. However, not all countries in the world are able to provide sanitation services to some or all of their citizens. Additionally, not all people in the world are able to afford clean water and sanitation. As a result, the people who can't afford these services have resort to less hygienic means, including using unclean water, hand washing without soap, open defecation, and more. Clean water and sanitation services are important because they help promote good hygiene, and prevent germs and diseases from spreading. Unclean water and sanitation services may not only be ineffective against preventing diseases and infections; they may also cause them, as many people die from diarrhea and cholera caused by drinking unclean water. With this in mind, we have decided to research the issue of inequitable access to sanitation services.
+Access to clean water and sanitation is a privilege that most first world countries have. However, not all countries in the world are able to provide sanitation services to some or all of their citizens. Additionally, not all people in the world are able to afford clean water and sanitation. As a result, the people who can't afford these services have resorted to less hygienic means, including using unclean water, hand washing without soap, open defecation, and more. Clean water and sanitation services are important because they help promote good hygiene, and prevent germs and diseases from spreading. Unclean water and sanitation services may not only be ineffective against preventing diseases and infections; they may also cause them, as many people die from diarrhea and cholera caused by drinking unclean water. With this in mind, we have decided to research the issue of inequitable access to sanitation services.
 
 
 ## Problem Domain
@@ -61,7 +62,7 @@ Direct: The people directly affected would be the ones that are using the water 
 
 Indirect: The government, who are affected by the opinion of their citizens. The workers that provide the facilities as they are the ones monitoring it.
 
-## Questions
+## Research Questions
 
 For our project, we decided to ask the following questions:
 
@@ -80,8 +81,8 @@ We ask this question to assess the strength of the relationship between poverty 
 
 ## The Dataset
 
-
 Our dataset is related to our project domain because it illustrates the number of cases of disease to a country, how many people fall under the poverty line, open defection rates, and handwashing rates. This can help us answer our questions on how poverty, access to clean water and sanitation methods, and diagnosis of cholera/ diarrheal disease are correlated.
+
 =======
 | File Name  | Number of rows|  Number of Variables    |
 | :---        |    :----:   |          ---: |
@@ -152,3 +153,7 @@ World Health Organization. (n.d.). Gho | by category | rate of deaths by country
 
 #8
 Poverty Rate by Country 2022. Poverty rate by country 2022. (n.d.). Retrieved October 31, 2022, from https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
+
+### Appendix A: Questions
+1. What should we do if sometimes our datasets don't load through?
+2. What format should we use for citations?
