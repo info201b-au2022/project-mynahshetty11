@@ -7,14 +7,6 @@ For what to do, see the [`../instructions/`](../instructions/) directory, specif
 * [Design Brief](../instructions/project-design-brief.pdf)
 * [Project Proposal Requirements](../instructions/p01-proposal-requirements.md)
 
-
-## Keywords
-
-Keywords: Sanitation Services, Access to Clean Water, Diarrheal Diseases
-## Code name: Water
-
-## Project Title: Water, and it's Factors in Different Countries
-
 ## Authors:
 - Ryan Louie (rlouie21@uw.edu)
 - Christopher Chen (cmchen22@uw.edu)
@@ -31,6 +23,11 @@ This question is important because lots of third world countries don't have prop
 To address the question, we will analyze each data set (poverty rate, handwash rate, diarrheal death rate, and cholera infection rate) and analyze the correlations we see between these data sets.
 We are concerned with the amount of data in each data set, because our data sets account for mostly all countries in the world and then organize them by different categories so the amount of data can lead to information overload.
 To address this concern, we plan to organize our data in ways that allows for viewers to see direct correlations between datasets.
+
+## Keywords
+
+Keywords: Sanitation Services, Access to Clean Water, Diarrheal Diseases
+### Code name: Water
 
 ## Introduction
 
