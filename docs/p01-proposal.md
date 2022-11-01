@@ -1,4 +1,5 @@
 # Water, and it's Factors in Different Countries: Project Proposal
+## Code name: Water
 
 **TODO**: Edit this file. Your project proposal goes here.
 
@@ -24,7 +25,6 @@ This question is important because lots of third world countries don't have prop
 ## Keywords
 
 Keywords: Sanitation Services, Access to Clean Water, Diarrheal Diseases
-### Code name: Water
 
 ## Introduction
 
