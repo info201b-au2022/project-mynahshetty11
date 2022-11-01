@@ -33,6 +33,8 @@ Access to clean water and sanitation is a privilege that most first world countr
 
 ## Problem Domain
 
+Use short sub-sections to describe your topic and the setting (that is, the sociotechnical situation), including project framing, human values, direct and indirect stakeholders, possible harms and benefits. See the Design Brief, section B.3. Note: You must include three citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ). You may find it helpful to include a figure. (About 400 words.)
+
 The sub-sections can be split into:
 
 - Sanitation services
@@ -79,7 +81,7 @@ We ask this question to assess the strength of the relationship between poverty 
 
 ## The Dataset
 
-Our dataset is related to our project domain because it illustrates the number of cases of disease to a country, how many people fall under the poverty line, open defection rates, and handwashing rates. This can help us answer our questions on how poverty, access to clean water and sanitation methods, and diagnosis of cholera/ diarrheal disease are correlated.
+Our dataset is related to our project domain because it illustrates the number of cases of disease to a country, how many people fall under the poverty line, open defection rates, and handwashing rates. This can help us answer our questions on how poverty, access to clean water and sanitation methods, and diagnosis of cholera/ diarrheal disease are correlated. The data collection process of the World Health Organization is funded partly by the assessed contributions that countries pay when they join the organization, and partly by voluntary contributions from member states. Third world countries miught benefit from this data because when viewers see how the conditions are they may want to make efforts towards putting policy in place to improve conditions. Non-profits also may benefit from the data because providing concrete evidence of disadvantages in certain areas may lead to more funds being raised to put back in to these areas. Data collected by the World Health Organization is cross examined across multiple sources to maintain accuracy. The WHO also uses fact sheets to kepp data up to date and viewers aware if data is not updated. The methods that the World Health Organization uses, such as those previously mentioned, to maintain their data makes it credible and trustworthy. We obtained this data by following the sources on the provided design brief and looking for data sets that we found interesting. We do credit this source because of how credible we've found it to be.
 
 =======
 | File Name  | Number of rows|  Number of Variables    |
@@ -90,23 +92,18 @@ Our dataset is related to our project domain because it illustrates the number o
 data_poverty.csv |      173        |          5          |
 
 
+
 ### Dataset Citations
+  World Health Organization. (n.d.). Gho | by category | handwashing with SOAP - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.WSHHYGIENE?lang=en
 
-GHO | By category | Handwashing with soap - Data by country. Whoint. Published online 2021. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.WSHHYGIENE?lang=en
+  World Health Organization. (n.d.). Gho | by category | open defecation - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.WSHOPENDEFECATION?lang=en
 
-GHO | By category | Open defecation - Data by country. Whoint. Published online 2021. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.WSHOPENDEFECATION?lang=en
+  World Health Organization. (n.d.). Gho | by category | number of reported cases - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.175?lang=en
 
-GHO | By category | Number of reported cases - Data by country. Whoint. Published online 2021. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.175?lang=en
+  World Health Organization. (n.d.). Gho | by category | rate of deaths by country - diarrhoeal diseases. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/view.main.ghe2002015-CH3?lang=en
 
-GHO | By category | Rate of deaths by country - Diarrhoeal diseases. Whoint. Published online 2021. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/view.main.ghe2002015-CH3?lang=en
+  Poverty rate by country 2022. (n.d.). Retrieved October 31, 2022, from https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
 
-World Population Review. Poverty Rate by Country 2022. Worldpopulationreview.com. Published 2022.  Retrieved October 31, 2022, from https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
-
-### Data Provenance
-
-* Who collected the data: The World Health Organization collected the data for the first four data sets sourced. The World Population Review (data for poverty rate) used data from multiple sources from the World Bank, OECD, UN, Our World in Data, and the US Census (bottom of their site includes their sources).
-
-* Obtaining data: We initially obtained our data through the World Health Organization's website. After realizing some of the data sets no longer existed, we found additional data regarding poverty rates from the World Population Review. We credit the source of the data using APA citation. As explained above, the WHO and the World Population Review are trustworthy sources, so the data is credible. 
 ## Expected Implications
 
 Assuming that areas that are poverty stricken have less access to clean water, the people in the affected areas have a higher likelihood of being infected with diseases such as cholera or diarrheal disease.
@@ -123,13 +120,11 @@ A major limitation for this project is the possible existence of confounding fac
 ## Sources
 
 #1
-
 MediLexicon International. (n.d.). The impact of water poverty in the United States. Medical News Today. Retrieved October 31, 2022, from https://www.medicalnewstoday.com/articles/how-water-poverty-impacts-public-health-in-the-us
 
 This illustrates that even though the US is a 1st world country, water still goes untreated because of poverty and mismanagement. This situation is much worse in countries that are lacking in economy and power.
 
 #2
-
 Djantchiemo, S., &amp; White, T. (2022, March 25). Figure of the week: Access to water, sanitation, and hygiene (WASH) services in sub-Saharan africa. Brookings. Retrieved October 31, 2022, from https://www.brookings.edu/blog/africa-in-focus/2022/03/25/figure-of-the-week-access-to-water-sanitation-and-hygiene-wash-services-in-sub-saharan-africa/
 
 This source presents sources about Africa as a continent, comparing it to different places around the world. Overall, it concludes that the water facilities are below average. It targets a specific problem (Covid-19) which affected the water and hygiene quality of many countries in Africa.
@@ -142,27 +137,23 @@ https://www.worldbank.org/en/topic/water/publication/wash-poverty-diagnostic
 This sources gives an overviews on how the world is trying to better water quality services. It focuses on regions that are in poverty.
 
 #4
-
 Djantchiemo, S., &amp; White, T. (2022, March 25). Figure of the week: Access to water, sanitation, and hygiene (WASH) services in sub-Saharan africa. Brookings. Retrieved October 31, 2022, from https://www.brookings.edu/blog/africa-in-focus/2022/03/25/figure-of-the-week-access-to-water-sanitation-and-hygiene-wash-services-in-sub-saharan-africa/
+<<<<<<< HEAD
 
 #5
-
-GHO | By category | Handwashing with soap - Data by country. Whoint. Published online 2021. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.WSHHYGIENE?lang=en
+World Health Organization. (n.d.). Gho | by category | handwashing with SOAP - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.WSHHYGIENE?lang=en
 
 #6
-
-GHO | By category | Open defecation - Data by country. Whoint. Published online 2021. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.WSHOPENDEFECATION?lang=en
+World Health Organization. (n.d.). Gho | by category | open defecation - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.WSHOPENDEFECATION?lang=en
 
 #7
-
-GHO | By category | Number of reported cases - Data by country. Whoint. Published online 2021. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.175?lang=en
-
-#8
-
-GHO | By category | Rate of deaths by country - Diarrhoeal diseases. Whoint. Published online 2021. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/view.main.ghe2002015-CH3?lang=en
+World Health Organization. (n.d.). Gho | by category | number of reported cases - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.175?lang=en
 
 #8
-World Population Review. Poverty Rate by Country 2022. Worldpopulationreview.com. Published 2022.  Retrieved October 31, 2022, from https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
+World Health Organization. (n.d.). Gho | by category | rate of deaths by country - diarrhoeal diseases. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/view.main.ghe2002015-CH3?lang=en
+
+#8
+Poverty Rate by Country 2022. Poverty rate by country 2022. (n.d.). Retrieved October 31, 2022, from https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
 
 ### Appendix A: Questions
 1. What should we do if sometimes our datasets don't load through?
