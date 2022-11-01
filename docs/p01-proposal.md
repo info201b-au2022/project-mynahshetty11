@@ -65,7 +65,7 @@ Direct: The people directly affected would be the ones that are using the water 
 
 Indirect: The government, who are affected by the opinion of their citizens. The workers that provide the facilities as they are the ones monitoring it.
 
-## Questions
+## Research Questions
 
 For our project, we decided to ask the following questions:
 
