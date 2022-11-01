@@ -34,6 +34,9 @@ Cholera: https://apps.who.int/gho/data/node.main.175?lang=en
 Diarrhea: https://apps.who.int/gho/data/view.main.ghe2002015-CH3?lang=en
 Poverty: https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
 
+## The Dataset
+Our dataset is related to our project domain
+
 ## Expected Implications
 
 Assuming that areas that are poverty stricken have less access to clean water, the people in the affected areas have a higher likelihood of being infected with diseases such as cholera or diarrheal disease.
