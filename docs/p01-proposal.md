@@ -97,7 +97,7 @@ Indirect: The government, who are affected by the opinion of their citizens. The
 
 A major limitation for this project is the possible existence of confounding factors. For example, natural disasters, civil unrest, or political instability could lead to lack of medicine and food, and therefore contribute to high infant/child mortality. Furthermore, the Cholera virus might be indigenous or dominant in certain areas of the world, which would influence the amount of cholera cases independently from the sanitation level. For example, a area with good sanitation might have a higher incidence of Cholera virus than somewhere else simply because the Cholera virus is more dominant in that area. Another limitation for this project is how it only focuses on two diseases, while unclean water and poverty could possibly be linked to many more. While it would be helpful to establish two connections, establishing a systemic connection between poverty, unclean water, and disease could have much larger implications. Also, having just two connections makes it more likely that this trend is simply an outlier, and could hide the truth about these alleged connections.
 
-Sources:
+##Sources
 
 #1
 MediLexicon International. (n.d.). The impact of water poverty in the United States. Medical News Today. Retrieved October 31, 2022, from https://www.medicalnewstoday.com/articles/how-water-poverty-impacts-public-health-in-the-us
