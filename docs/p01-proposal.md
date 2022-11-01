@@ -55,9 +55,7 @@ Diarrhea: https://apps.who.int/gho/data/view.main.ghe2002015-CH3?lang=en
 Poverty: https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
 
 ## The Dataset
-<<<<<<< HEAD
-Our dataset is related to our project domain because it
-=======
+
 Our dataset is related to our project domain because it illustrates the number of cases of disease to a country, how many people fall under the poverty line, open defection rates, and handwashing rates. This can help us answer our questions on how poverty, access to clean water and sanitation methods, and diagnosis of cholera/ diarrheal disease are related.
 >>>>>>> bcc993bb2fad181c71c381f2659959a1a7f49446
 
