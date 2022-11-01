@@ -49,7 +49,11 @@ Diarrhea: https://apps.who.int/gho/data/view.main.ghe2002015-CH3?lang=en
 Poverty: https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
 
 ## The Dataset
+<<<<<<< HEAD
 Our dataset is related to our project domain because it
+=======
+Our dataset is related to our project domain because it illustrates the number of cases of disease to a country, how many people fall under the poverty line, open defection rates, and handwashing rates. This can help us answer our questions on how poverty, access to clean water and sanitation methods, and diagnosis of cholera/ diarrheal disease are related.
+>>>>>>> bcc993bb2fad181c71c381f2659959a1a7f49446
 
 ## Expected Implications
 
@@ -89,6 +93,10 @@ Direct: The people directly affected would be the ones that are using the water 
 
 Indirect: The government, who are affected by the opinion of their citizens. The workers that provide the facilities as they are the ones monitoring it.
 
+## Limitations
+
+A major limitation for this project is the possible existence of confounding factors. For example, natural disasters, civil unrest, or political instability could lead to lack of medicine and food, and therefore contribute to high infant/child mortality. Furthermore, the Cholera virus might be indigenous or dominant in certain areas of the world, which would influence the amount of cholera cases independently from the sanitation level. For example, a area with good sanitation might have a higher incidence of Cholera virus than somewhere else simply because the Cholera virus is more dominant in that area. Another limitation for this project is how it only focuses on two diseases, while unclean water and poverty could possibly be linked to many more. While it would be helpful to establish two connections, establishing a systemic connection between poverty, unclean water, and disease could have much larger implications. Also, having just two connections makes it more likely that this trend is simply an outlier, and could hide the truth about these alleged connections.
+
 Sources:
 
 #1
@@ -98,6 +106,7 @@ This illustrates that even though the US is a 1st world country, water still goe
 
 #2
 Djantchiemo, S., &amp; White, T. (2022, March 25). Figure of the week: Access to water, sanitation, and hygiene (WASH) services in sub-Saharan africa. Brookings. Retrieved October 31, 2022, from https://www.brookings.edu/blog/africa-in-focus/2022/03/25/figure-of-the-week-access-to-water-sanitation-and-hygiene-wash-services-in-sub-saharan-africa/
+<<<<<<< HEAD
 
 This source presents sources about Africa as a continent, comparing it to different places around the world. Overall, it concludes that the water facilities are below average. It targets a specific problem (Covid-19) which affected the water and hygiene quality of many countries in Africa.
 
@@ -108,3 +117,8 @@ HEAD
 https://www.worldbank.org/en/topic/water/publication/wash-poverty-diagnostic
 
 This sources gives an overviews on how the world is trying to better water quality services. It focuses on regions that are in poverty.
+=======
+
+#3
+Djantchiemo, S., &amp; White, T. (2022, March 25). Figure of the week: Access to water, sanitation, and hygiene (WASH) services in sub-Saharan africa. Brookings. Retrieved October 31, 2022, from https://www.brookings.edu/blog/africa-in-focus/2022/03/25/figure-of-the-week-access-to-water-sanitation-and-hygiene-wash-services-in-sub-saharan-africa/
+>>>>>>> bcc993bb2fad181c71c381f2659959a1a7f49446
