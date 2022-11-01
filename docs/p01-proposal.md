@@ -40,3 +40,49 @@ Assuming that areas that are poverty stricken have less access to clean water, t
 **For technologists/ experts in the health and sanitation fields**, the focus would need to shift more on how to provide poverty-stricken areas with simple necessities such as access to clean water and sanitation services. Technologists would need to put out products that are affordable and can allow these areas to boil their own water so that they won’t contract such diseases.
 **For designers**, implications would likely be designing affordable products and educational services for these areas to learn how. Designers would need to craft methods that would help “fix” the structural barriers these communities have to safe sanitization methods.
 **For policy makers**, they need to write policy that makes sanitation methods readily available. Clean water and sanitary cleaning methods are not privileges; everyone should have the right to access these methods. Policy needs to be written whether that’s by increasing funding for materials to educate and give access to clean water and sanitation services, or by providing more job opportunities so people can afford to live healthily and without risk of contracting diseases due to the lack of sanitation.
+
+## Problem Domain
+
+Use short sub-sections to describe your topic and the setting (that is, the sociotechnical situation), including project framing, human values, direct and indirect stakeholders, possible harms and benefits. See the Design Brief, section B.3. Note: You must include three citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ). You may find it helpful to include a figure. (About 400 words.)
+
+The sub-sections can be split into:
+
+- Sanitation services
+- Drinking water services
+- Handwashing with soap
+- Open defecation
+
+The data examines the many sources of water used for hygiene, and how the quality of water affects the spread of disease. Water is a vital part in health, and is something that needs to be addressed in communities. In our project, we look to explore countries that are struggling with water services, and focusing on pointing out patterns throughout those countries. We plan to visualize a series of graphs, as well as citing evidence from the statistics that we find.
+
+The human values that this addresses is:
+
+- community
+- power
+- justice
+- service
+- health
+
+Harm: Through tackling the problems that are associated with water quality, there would be a lot less diseases being spread, and thus deaths. One harm with water quality is that a lot of the conditions stem from poverty. Because of this, solutions can be hard to come up with as a lot comes from completely changing the infrastructure.
+
+Benefit: A lot of death and sickness can be avoided with better water quality amongst all countries. Overall, a benefit involves ethics, ensuring that clean water is a basic human right. It is the right thing to do to advocate.
+
+Stakeholders:
+
+Direct: The people directly affected would be the ones that are using the water systems. This could be families, people, or other inhabitants.
+
+Indirect: The government, who are affected by the opinion of their citizens. The workers that provide the facilities as they are the ones monitoring it.
+
+Sources:
+
+#1
+https://www.medicalnewstoday.com/articles/how-water-poverty-impacts-public-health-in-the-us
+
+This illustrates that even though the US is a 1st world country, water still goes untreated because of poverty and mismanagement.
+
+#2
+
+https://www.brookings.edu/blog/africa-in-focus/2022/03/25/figure-of-the-week-access-to-water-sanitation-and-hygiene-wash-services-in-sub-saharan-africa/
+
+#3
+
+https://www.worldbank.org/en/topic/water/publication/wash-poverty-diagnostic
