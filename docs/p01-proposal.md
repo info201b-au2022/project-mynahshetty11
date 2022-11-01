@@ -50,7 +50,17 @@ We ask this question to assess the strength of the relationship between poverty 
 
 ## The Dataset
 
+
 Our dataset is related to our project domain because it illustrates the number of cases of disease to a country, how many people fall under the poverty line, open defection rates, and handwashing rates. This can help us answer our questions on how poverty, access to clean water and sanitation methods, and diagnosis of cholera/ diarrheal disease are correlated.
+=======
+| File Name  | Number of rows|  Number of Variables    |
+| :---        |    :----:   |          ---: |
+| data_cholera_infection_rate.csv |   2470       |        3  |
+|data_diarrhea_death_rate.csv   |    198   |         55       |
+|data_handwash.csv  |     199    |            3      |
+data_poverty.csv |      173        |          5          |
+
+
 
 ### Dataset Citations
   World Health Organization. (n.d.). Gho | by category | handwashing with SOAP - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.WSHHYGIENE?lang=en
