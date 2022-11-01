@@ -47,18 +47,22 @@ We ask this question to research if there is a relation (or correlation) between
 
 We ask this question to assess the strength of the relationship between poverty and hygiene. This helps with addressing the question of what we must do to help increase equitable access to sanitation services, as addressing the issue of poverty may intersect with assisting people's ability to afford hygienic services.
 
-&&&&&&&&&&& EDIT THIS STUFF HERE! The person in charge of writing the dataset should move these URLs to each related dataset. We might not need all of them. ALso feel free to add questions in the questions section. 3 is technically good enough cuz the four person example had 3 questions, but ymmv&&&&&&&&&&&&&&
-Handwash: https://apps.who.int/gho/data/node.main.WSHHYGIENE?lang=en
-Open Defecate:  https://apps.who.int/gho/data/node.main.WSHOPENDEFECATION?lang=en
-Cholera: https://apps.who.int/gho/data/node.main.175?lang=en
-Diarrhea: https://apps.who.int/gho/data/view.main.ghe2002015-CH3?lang=en
-Poverty: https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
 
 ## The Dataset
 
 Our dataset is related to our project domain because it illustrates the number of cases of disease to a country, how many people fall under the poverty line, open defection rates, and handwashing rates. This can help us answer our questions on how poverty, access to clean water and sanitation methods, and diagnosis of cholera/ diarrheal disease are related.
->>>>>>> bcc993bb2fad181c71c381f2659959a1a7f49446
 
+### Dataset Citations
+  World Health Organization. (n.d.). Gho | by category | handwashing with SOAP - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.WSHHYGIENE?lang=en 
+  
+  World Health Organization. (n.d.). Gho | by category | open defecation - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.WSHOPENDEFECATION?lang=en 
+  
+  World Health Organization. (n.d.). Gho | by category | number of reported cases - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.175?lang=en 
+  
+  World Health Organization. (n.d.). Gho | by category | rate of deaths by country - diarrhoeal diseases. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/view.main.ghe2002015-CH3?lang=en 
+  
+  Poverty rate by country 2022. (n.d.). Retrieved October 31, 2022, from https://worldpopulationreview.com/country-rankings/poverty-rate-by-country 
+  
 ## Expected Implications
 
 Assuming that areas that are poverty stricken have less access to clean water, the people in the affected areas have a higher likelihood of being infected with diseases such as cholera or diarrheal disease.
