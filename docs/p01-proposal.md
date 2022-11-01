@@ -52,11 +52,11 @@ Poverty: https://worldpopulationreview.com/country-rankings/poverty-rate-by-coun
 
 | File Name  | Number of rows|  Number of Variables    |
 | :---        |    :----:   |          ---: |
-| data_cholera_infection_rate.csv |          |          |
-|data_diarrhea_death_rate.csv   |       |                |
-|data_handwash.csv  |       |               |
-data_poverty.csv |        |                              |
-data_water_sanitation_hygeine.xlsx	|        |            |
+| data_cholera_infection_rate.csv |   2470       |        3  |
+|data_diarrhea_death_rate.csv   |    198   |         55       |
+|data_handwash.csv  |     199    |            3      |
+data_poverty.csv |      173        |          5          |
+
 
 
 Our dataset is related to our project domain because it illustrates the number of cases of disease to a country, how many people fall under the poverty line, open defection rates, and handwashing rates. This can help us answer our questions on how poverty, access to clean water and sanitation methods, and diagnosis of cholera/ diarrheal disease are related.
