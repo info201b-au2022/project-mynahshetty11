@@ -7,6 +7,10 @@ For what to do, see the [`../instructions/`](../instructions/) directory, specif
 * [Design Brief](../instructions/project-design-brief.pdf)
 * [Project Proposal Requirements](../instructions/p01-proposal-requirements.md)
 
+## Keywords
+
+Keywords: Sanitation Services, Access to Clean Water, Diarrheal Diseases
+
 ## Introduction
 
 Access to clean water and sanitation is a privilege that most first world countries have. However, not all countries in the world are able to provide sanitation services to some or all of their citizens. Additionally, not all people in the world are able to afford clean water and sanitation. As a result, the people who can't afford these services have resort to less hygienic means, including using unclean water, handwashing without soap, open defecation, and more. Clean water and sanitation services are important because they help promote good hygiene, and prevent germs and diseases from spreading. Unclean water and sanitation services may not only be ineffective against preventing diseases and infections; they may also cause them, as many people die from diarrhea and cholera caused by drinking unclean water. With this in mind, we have decided to research the issue of inequitable access to sanitation services.
@@ -27,7 +31,7 @@ We ask this question to research if there is a relation (or correlation) between
 
 We ask this question to assess the strength of the relationship between poverty and hygiene. This helps with addressing the question of what we must do to help increase equitable access to sanitation services, as addressing the issue of poverty may intersect with assisting people's ability to afford hygienic services.
 
-<<<<<<<<<<< EDIT THIS STUFF HERE! The person in charge of writing the dataset should move these URLs to each related dataset. We might not need all of them. ALso feel free to add questions in the questions section. 3 is technically good enough cuz the four person example had 3 questions, but ymmv>>>>>>>>>>>>>>>>
+&&&&&&&&&&& EDIT THIS STUFF HERE! The person in charge of writing the dataset should move these URLs to each related dataset. We might not need all of them. ALso feel free to add questions in the questions section. 3 is technically good enough cuz the four person example had 3 questions, but ymmv&&&&&&&&&&&&&&
 Handwash: https://apps.who.int/gho/data/node.main.WSHHYGIENE?lang=en
 Open Defecate:  https://apps.who.int/gho/data/node.main.WSHOPENDEFECATION?lang=en
 Cholera: https://apps.who.int/gho/data/node.main.175?lang=en
@@ -75,12 +79,12 @@ Indirect: The government, who are affected by the opinion of their citizens. The
 Sources:
 
 #1
-MediLexicon International. (n.d.). The impact of water poverty in the United States. Medical News Today. Retrieved October 31, 2022, from https://www.medicalnewstoday.com/articles/how-water-poverty-impacts-public-health-in-the-us 
+MediLexicon International. (n.d.). The impact of water poverty in the United States. Medical News Today. Retrieved October 31, 2022, from https://www.medicalnewstoday.com/articles/how-water-poverty-impacts-public-health-in-the-us
 
 This illustrates that even though the US is a 1st world country, water still goes untreated because of poverty and mismanagement.
 
 #2
-Djantchiemo, S., &amp; White, T. (2022, March 25). Figure of the week: Access to water, sanitation, and hygiene (WASH) services in sub-Saharan africa. Brookings. Retrieved October 31, 2022, from https://www.brookings.edu/blog/africa-in-focus/2022/03/25/figure-of-the-week-access-to-water-sanitation-and-hygiene-wash-services-in-sub-saharan-africa/ 
+Djantchiemo, S., &amp; White, T. (2022, March 25). Figure of the week: Access to water, sanitation, and hygiene (WASH) services in sub-Saharan africa. Brookings. Retrieved October 31, 2022, from https://www.brookings.edu/blog/africa-in-focus/2022/03/25/figure-of-the-week-access-to-water-sanitation-and-hygiene-wash-services-in-sub-saharan-africa/
 
 #3
-Djantchiemo, S., &amp; White, T. (2022, March 25). Figure of the week: Access to water, sanitation, and hygiene (WASH) services in sub-Saharan africa. Brookings. Retrieved October 31, 2022, from https://www.brookings.edu/blog/africa-in-focus/2022/03/25/figure-of-the-week-access-to-water-sanitation-and-hygiene-wash-services-in-sub-saharan-africa/ 
+Djantchiemo, S., &amp; White, T. (2022, March 25). Figure of the week: Access to water, sanitation, and hygiene (WASH) services in sub-Saharan africa. Brookings. Retrieved October 31, 2022, from https://www.brookings.edu/blog/africa-in-focus/2022/03/25/figure-of-the-week-access-to-water-sanitation-and-hygiene-wash-services-in-sub-saharan-africa/
