@@ -95,3 +95,18 @@ Djantchiemo, S., &amp; White, T. (2022, March 25). Figure of the week: Access to
 
 #3
 Djantchiemo, S., &amp; White, T. (2022, March 25). Figure of the week: Access to water, sanitation, and hygiene (WASH) services in sub-Saharan africa. Brookings. Retrieved October 31, 2022, from https://www.brookings.edu/blog/africa-in-focus/2022/03/25/figure-of-the-week-access-to-water-sanitation-and-hygiene-wash-services-in-sub-saharan-africa/
+
+#4
+World Health Organization. (n.d.). Gho | by category | handwashing with SOAP - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.WSHHYGIENE?lang=en
+
+#5
+World Health Organization. (n.d.). Gho | by category | open defecation - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.WSHOPENDEFECATION?lang=en
+
+#6
+World Health Organization. (n.d.). Gho | by category | number of reported cases - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.175?lang=en
+
+#7
+World Health Organization. (n.d.). Gho | by category | rate of deaths by country - diarrhoeal diseases. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/view.main.ghe2002015-CH3?lang=en
+
+#8
+Poverty Rate by Country 2022. Poverty rate by country 2022. (n.d.). Retrieved October 31, 2022, from https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
