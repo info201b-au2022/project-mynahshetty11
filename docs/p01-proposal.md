@@ -11,7 +11,6 @@ For what to do, see the [`../instructions/`](../instructions/) directory, specif
 ## Keywords
 
 Keywords: Sanitation Services, Access to Clean Water, Diarrheal Diseases
-
 ## Code name: Water
 
 ## Project Title: Water, and it's Factors in Different Countries
@@ -26,10 +25,10 @@ Keywords: Sanitation Services, Access to Clean Water, Diarrheal Diseases
 
 ## Date: Autumn 2022
 
-
 ## Introduction
 
 Access to clean water and sanitation is a privilege that most first world countries have. However, not all countries in the world are able to provide sanitation services to some or all of their citizens. Additionally, not all people in the world are able to afford clean water and sanitation. As a result, the people who can't afford these services have resort to less hygienic means, including using unclean water, hand washing without soap, open defecation, and more. Clean water and sanitation services are important because they help promote good hygiene, and prevent germs and diseases from spreading. Unclean water and sanitation services may not only be ineffective against preventing diseases and infections; they may also cause them, as many people die from diarrhea and cholera caused by drinking unclean water. With this in mind, we have decided to research the issue of inequitable access to sanitation services.
+
 
 ## Problem Domain
 
