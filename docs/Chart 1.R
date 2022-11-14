@@ -5,6 +5,13 @@ library(stringr)
 #Cholera data
 cholera <- read.csv("project-mynahshetty11/data/data_cholera_infection_rate.csv")
 
+#code to sort by total amount of cases every 5 years. Plot might have too big numbers
+cholera %>%
+group_by(Year = Year - Year %% 5) %>% 
+  summarise(Number.of.reported.cases.of.cholera = sum(Number.of.reported.cases.of.cholera))
+View(cholera)
+
+plot(cholera$Year, cholera$Number.of.reported.cases.of.cholera)
 #Handwashing data
 handwash <- read.csv("project-mynahshetty11/data/data_handwash.csv")
 
