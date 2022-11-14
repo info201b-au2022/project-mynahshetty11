@@ -1,6 +1,5 @@
 # Water, and it's Factors in Different Countries: Project Proposal
 
-**TODO**: Edit this file. Your project proposal goes here.
 
 For what to do, see the [`../instructions/`](../instructions/) directory, specifically:
 
@@ -54,11 +53,11 @@ Harm: Through tackling the problems that are associated with water quality, ther
 
 Benefit: A lot of death and sickness can be avoided with better water quality amongst all countries. Overall, a benefit involves ethics, ensuring that clean water is a basic human right. It is the right thing to do to advocate.
 
-Stakeholders:
+Stakeholders: Here are tbe stakeholders:
 
-Direct: The people directly affected would be the ones that are using the water systems. This could be families, people, or other inhabitants.
+* Direct: The people directly affected would be the ones that are using the water systems. This could be families, people, or other inhabitants.
 
-Indirect: The government, who are affected by the opinion of their citizens. The workers that provide the facilities as they are the ones monitoring it.
+* Indirect: The government, who are affected by the opinion of their citizens. The workers that provide the facilities as they are the ones monitoring it.
 
 ## Research Questions
 
@@ -106,7 +105,7 @@ World Population Review. Poverty Rate by Country 2022. Worldpopulationreview.com
 
 * Who collected the data: The World Health Organization collected the data for the first four data sets sourced. The World Population Review (data for poverty rate) used data from multiple sources from the World Bank, OECD, UN, Our World in Data, and the US Census (bottom of their site includes their sources).
 
-* Obtaining data: We initially obtained our data through the World Health Organization's website. After realizing some of the data sets no longer existed, we found additional data regarding poverty rates from the World Population Review. We credit the source of the data using APA citation. As explained above, the WHO and the World Population Review are trustworthy sources, so the data is credible. 
+* Obtaining data: We initially obtained our data through the World Health Organization's website. After realizing some of the data sets no longer existed, we found additional data regarding poverty rates from the World Population Review. We credit the source of the data using APA citation. As explained above, the WHO and the World Population Review are trustworthy sources, so the data is credible.
 ## Expected Implications
 
 Assuming that areas that are poverty stricken have less access to clean water, the people in the affected areas have a higher likelihood of being infected with diseases such as cholera or diarrheal disease.
@@ -165,5 +164,4 @@ GHO | By category | Rate of deaths by country - Diarrhoeal diseases. Whoint. Pub
 World Population Review. Poverty Rate by Country 2022. Worldpopulationreview.com. Published 2022.  Retrieved October 31, 2022, from https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
 
 ### Appendix A: Questions
-1. What should we do if sometimes our datasets don't load through?
-2. What format should we use for citations?
+N/A
