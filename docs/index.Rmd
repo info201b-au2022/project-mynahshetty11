@@ -14,6 +14,8 @@ library(dplyr)
 library(ggplot2)
 library(stringr)
 library(tidyr)
+library("data.table")
+library(knitr)
 
 ```
 ```{r load_data}
@@ -29,11 +31,26 @@ population <- read.csv("../data/data_country_population.csv")
 #Diarrhea data
 diarrhea <- read.csv("../data/data_diarrhea_death_rate.csv")
 
+#Poverty data
+poverty <- read.csv("../data/data_poverty.csv")
+
+
 ```
 ## Dynamic Paragraph
 
 ## Table
 ```{r, echo = FALSE}
+highest_poverty <- poverty %>%
+  group_by(country)%>%
+  filter(percPoverty >= 50.0)
+
+
+
+table <- as.data.table(highest_poverty)
+kable(table)
+
+
+
 
 
 
@@ -109,11 +126,17 @@ chart_1
 
 ```
 
-
+This chart was created to access to relation between the percentage of people in a country with access to clean handwashing services and the reported cases of cholera per population of country. Our initial belief was that there would be a negative correlation between the two variables as more access to clean handwashing services reduces the risk of diseases. The graph suggests a non-linear relatinoship, but with a general negative trend.
 
 
 
 ## Chart 2
+
+```{r, echo = FALSE}
+
+```
+
+
 
 ## Chart 3
 
