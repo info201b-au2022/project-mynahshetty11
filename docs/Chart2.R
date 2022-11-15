@@ -31,10 +31,17 @@ total_handwashing <- total_handwashing %>%
   ungroup()
 
 total_handwashing <- total_handwashing %>%
-  group_by(date)
+  group_by(date) %>%
+  summarise(total_percentage = mean(total_percentage))
 
-total_handwashing %>%
-  filter(countries %in% c("Haiti", "Viet Nam")) %>%
-  ggplot(aes( x = date, y = total_percentage, color = countries)) + geom_line() 
+
+total_handwashing_plot <- total_handwashing %>%
+  ggplot(aes(x = date, y = total_percentage)) + 
+  geom_line(alpha = .4, color = "seagreen") + 
+  xlab("Date") +
+  ylab("Percentage of People with Access to Handwashing Services") +
+  scale_y_sqrt(labels = scales::comma) + 
+  labs(title = "Average total percentage of Handwashing Access per Year",
+       subtitle = "Relationship between Handwashing Service Aaccessibility and Date",
+       caption = " This chart was created to determine the correlation between handwashing access and time. This will help people visualize how handwashing access has developed over the past years.We initially thought that the graph would show very visible positive growth, however, we can now see how their are quite a few dips in the chart that we did not expect.It is observed how the chart does seem to be levelling out in the recent years.")
   
-
