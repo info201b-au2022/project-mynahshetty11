@@ -96,6 +96,8 @@ summary_list$minimum_proportion_handwash <-minimum_proportion_handwash
 summary_list$min_prop_how_many <- min_prop_how_many
 summary_list$avg_cholera_cases <- round(mean(handwash_and_cholera$Number.of.reported.cases.of.cholera, na.rm =TRUE), digits = 2)
 ```
+Our first value of interest was to evaluate the highest proportion of people with access to hand washing in any of the countries as of the most recent date. The highest proportion identified is `r summary_list$maximum_proportion_handwash`. Only `r summary_list$max_prop_how_many` country( or countries) share the highest proportion. Subsequently, the lowest proportion identified is `r summary_list$minimum_proportion_handwash`, with `r summary_list$min_prop_how_many` country (countries) sharing this proportion. The average percentage of poverty throughout the world throughout the years is `r summary_list$avg_prop_poverty`. Finally, the median cholera cases of all the countries as of the most recent year is `r summary_list$median_cholera_cases`, while the average cholera cases of all the countries as of the most recent year is `r summary_list$avg_cholera_cases``.
+
 ## Table
 ```{r, echo = FALSE}
 highest_poverty <- poverty %>%
