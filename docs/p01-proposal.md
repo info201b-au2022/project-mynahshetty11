@@ -105,6 +105,8 @@ data_poverty.csv |      173        |          5          |
 
 World Population Review. Poverty Rate by Country 2022. Worldpopulationreview.com. Published 2022.  Retrieved October 31, 2022, from https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
 
+Population, total. Data Last Updated 9/16/2022. Retrieved November 14, 2022, from https://data.worldbank.org/indicator/SP.POP.TOTL
+
 ## Expected Implications
 
 Assuming that areas that are poverty stricken have less access to clean water, the people in the affected areas have a higher likelihood of being infected with diseases such as cholera or diarrheal disease.
@@ -155,5 +157,7 @@ World Health Organization. (n.d.). Gho | by category | rate of deaths by country
 #9
 Poverty Rate by Country 2022. Poverty rate by country 2022. (n.d.). Retrieved October 31, 2022, from https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
 
+#10
+Population, total. Data Last Updated 9/16/2022. Retrieved November 14, 2022, from https://data.worldbank.org/indicator/SP.POP.TOTL 
 ### Appendix A: Questions
 N/A
