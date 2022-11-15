@@ -18,7 +18,6 @@ library("data.table")
 library(knitr)
 
 ```
-
 ```{r load_data}
   #Cholera data
 cholera <- read.csv("../data/data_cholera_infection_rate.csv")
@@ -32,70 +31,15 @@ population <- read.csv("../data/data_country_population.csv")
 #Diarrhea data
 diarrhea <- read.csv("../data/data_diarrhea_death_rate.csv")
 
-<<<<<<< HEAD
 #Poverty data
 poverty <- read.csv("../data/data_poverty.csv")
 
 
-=======
-poverty <- read.csv("../data/data_poverty.csv")
->>>>>>> 8bb36d0b8dd87c708813df6786014b9dd3989545
 ```
 ## Dynamic Paragraph
 
-```{r, include=FALSE}
-  #Convert Years to rows
-population_filtered <- select(population, -c(Country.Code, Indicator.Name, Indicator.Code)) %>%
-                      gather("Year", "Population", -Country.Name)%>%
-                      rename(Country =Country.Name)
-#Rename columns for handwash
-handwash_filtered <- slice(handwash,3:n())
-names(handwash_filtered) <-  paste0(names(handwash_filtered), ",") %>%
-                               str_replace("\\.1,", ", Urban") %>%
-                          str_replace("\\.2,", ", Rural") %>%
-                          str_replace("\\,$", ", Both Rural and Urban")
-
-#Remove Years to actual years
-population_filtered$Year <- strtoi(str_replace(population_filtered$Year, "X", ""))
-
-#Convert handwash years to rows
-handwash_filtered <- rename(handwash_filtered, Countries = "X, Both Rural and Urban") %>%
-                      gather("Year_and_type", "Percent", -Countries) %>%
-                    separate("Year_and_type", into = c("Year","Urban_Rural_or_Both"), sep = ", ")%>%
-                    rename(Country = Countries)
-
-#Convert Percentages to integers
-#String to integer function is from:
-#https://www.tutorialkart.com/r-tutorial/r-convert-string-to-integer/#:~:text=To%20convert%20String%20to%20Integer%20in%20R%20programming%2C%20call%20strtoi,respect%20to%20the%20specified%20base.
-handwash_filtered$Percent <- strtoi(handwash_filtered$Percent)
-handwash_filtered <- filter(handwash_filtered, !is.na(handwash_filtered$Percent))
-
-#Convert Year to actual years
-handwash_filtered$Year <- strtoi(str_replace(handwash_filtered$Year, "X", ""))
-
-#Join handwash_filtered and cholera
-handwash_and_cholera <- inner_join(handwash_filtered, cholera)
-
-#Value 1
-maximum_proportion_handwash <- filter(handwash_filtered, handwash_filtered$Percent == max(handwash_filtered$Percent)) %>%
-  pull(Percent)
-maximum_proportion_handwash <- maximum_proportion_handwash[1]
-
-max_prop_where <- filter(handwash_filtered, handwash_filtered$Percent == max(handwash_filtered$Percent)) %>%
-  pull(Country)
-
-#Value 2
-avg_prop_poverty <- round((mean(na.omit(poverty$percPoverty))), digits = 2)
-
-#Value 3
-mean_cholera_cases  <- round(mean(cholera$Number.of.reported.cases.of.cholera, na.rm =TRUE), digits = 2)
-
-#Value 4
-
-```
 ## Table
 ```{r, echo = FALSE}
-<<<<<<< HEAD
 highest_poverty <- poverty %>%
   group_by(country)%>%
   filter(percPoverty >= 50.0)
@@ -107,38 +51,9 @@ kable(table)
 
 
 
-=======
-  #Convert Years to rows
-population_filtered <- select(population, -c(Country.Code, Indicator.Name, Indicator.Code)) %>%
-                      gather("Year", "Population", -Country.Name)%>%
-                      rename(Country =Country.Name)
-#Rename columns for handwash
-handwash_filtered <- slice(handwash,3:n())
-names(handwash_filtered) <-  paste0(names(handwash_filtered), ",") %>%
-                               str_replace("\\.1,", ", Urban") %>%
-                          str_replace("\\.2,", ", Rural") %>%
-                          str_replace("\\,$", ", Both Rural and Urban")
-#Remove Years to actual years
-population_filtered$Year <- strtoi(str_replace(population_filtered$Year, "X", ""))
 
-#Convert handwash years to rows
-handwash_filtered <- rename(handwash_filtered, Countries = "X, Both Rural and Urban") %>%
-                      gather("Year_and_type", "Percent", -Countries) %>%
-                    separate("Year_and_type", into = c("Year","Urban_Rural_or_Both"), sep = ", ")%>%
-                    rename(Country = Countries)
->>>>>>> 8bb36d0b8dd87c708813df6786014b9dd3989545
 
-#Convert Percentages to integers
-#String to integer function is from:
-#https://www.tutorialkart.com/r-tutorial/r-convert-string-to-integer/#:~:text=To%20convert%20String%20to%20Integer%20in%20R%20programming%2C%20call%20strtoi,respect%20to%20the%20specified%20base.
-handwash_filtered$Percent <- strtoi(handwash_filtered$Percent)
-handwash_filtered <- filter(handwash_filtered, !is.na(handwash_filtered$Percent))
 
-#Convert Year to actual years
-handwash_filtered$Year <- strtoi(str_replace(handwash_filtered$Year, "X", ""))
-
-#Join handwash_filtered and cholera
-handwash_and_cholera <- inner_join(handwash_filtered, cholera)
 ```
 
 
