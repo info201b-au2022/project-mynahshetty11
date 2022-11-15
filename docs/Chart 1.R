@@ -15,8 +15,8 @@ population <- read.csv("project-mynahshetty11/data/data_country_population.csv")
 
 #Convert Years to rows
 population_filtered <- select(population, -c(Country.Code, Indicator.Name, Indicator.Code)) %>%
-                      gather("Year", "Population", -Country.Name)
-
+                      gather("Year", "Population", -Country.Name)%>%
+                      rename(Country =Country.Name)
 #Rename columns for handwash
 handwash_filtered <- slice(handwash,3:n())
 names(handwash_filtered) <-  paste0(names(handwash_filtered), ",") %>%
@@ -26,6 +26,7 @@ names(handwash_filtered) <-  paste0(names(handwash_filtered), ",") %>%
 
 #Remove Years to actual years
 population_filtered$Year <- strtoi(str_replace(population_filtered$Year, "X", ""))
+
 #Convert handwash years to rows
 handwash_filtered <- rename(handwash_filtered, Countries = "X, Both Rural and Urban") %>%
                       gather("Year_and_type", "Percent", -Countries) %>%
@@ -44,8 +45,13 @@ handwash_filtered$Year <- strtoi(str_replace(handwash_filtered$Year, "X", ""))
 #Join handwash_filtered and cholera
 handwash_and_cholera <- inner_join(handwash_filtered, cholera)
 
+#Join handwash_and_cholera with population_filtered, and
+#create Proportion for Cholera Cases divided by Proportion of Sanitation
+final_dataframe <- inner_join(handwash_and_cholera, population_filtered) %>%
+                    mutate(cases_per_population = Number.of.reported.cases.of.cholera / Population * 100)
+
 #Make our ggplot2 chart
-chart_1 <- ggplot(data = handwash_and_cholera, aes(x = Percent, y = Number.of.reported.cases.of.cholera)) +
+chart_1 <- ggplot(data = final_dataframe, aes(x = Percent, y = cases_per_population)) +
                     geom_point(alpha = .4, color = "seagreen") +
                     geom_smooth()+facet_wrap(~Urban_Rural_or_Both) + 
                     xlab("Percentage of People with Access to Clean Services") +
@@ -55,6 +61,6 @@ chart_1 <- ggplot(data = handwash_and_cholera, aes(x = Percent, y = Number.of.re
                   #Square root scale is from:
                   #https://ggplot2-book.org/scales-guides.html
                     scale_y_sqrt(labels = scales::comma) + 
-                    labs(title = "Access to Clean Services vs Percent of Reported Cases of Cholera to Population")
+                    labs(title = "Access to Clean Services vs Percent of Reported Cases of Cholera per Country Population")
 chart_1
 
