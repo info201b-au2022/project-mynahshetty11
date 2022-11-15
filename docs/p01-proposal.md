@@ -118,6 +118,10 @@ Assuming that areas that are poverty stricken have less access to clean water, t
 
 A major limitation for this project is the possible existence of confounding factors. For example, natural disasters, civil unrest, or political instability could lead to lack of medicine and food, and therefore contribute to high infant/child mortality. Furthermore, the Cholera virus might be indigenous or dominant in certain areas of the world, which would influence the amount of cholera cases independently from the sanitation level. For example, a area with good sanitation might have a higher incidence of Cholera virus than somewhere else simply because the Cholera virus is more dominant in that area. Another limitation for this project is how it only focuses on two diseases, while unclean water and poverty could possibly be linked to many more. While it would be helpful to establish two connections, establishing a systemic connection between poverty, unclean water, and disease could have much larger implications. Also, having just two connections makes it more likely that this trend is simply an outlier, and could hide the truth about these alleged connections.
 
+We will address these limitations by using the R programming language to create visualizations of this data. This way, any outliers can be spotted immediatly, and potentially removed from facotoring in our ultimate conclusion. For the first limitation, we could address this by highlighting countries that we know are currently going through a rough time. Furthermore, we can group countries into levels of stablity, and then visualize data from that angle. For the second limitation of how we only address two diseases, we could potentially address this by analyzing a higher amount of factors. Furthermore, the two diseases picked for our analysis are arguably related to a multitude of other illnesses. Therefore while we can't establish an absolute connection between poverty, unclear water and disease, we could still establish a very strong connection between the factors.
+
+
+
 ## References
 
 #1
