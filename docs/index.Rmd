@@ -377,9 +377,11 @@ The reason for working on this chart is to delve into how poverty can affect acc
 #                   This will help people visualize how handwashing access has developed over the past years.
 #                   We initially thought that the graph would show very visible positive growth, however,
 #                   we can now see how their are quite a few dips in the chart that we did not expect.It is observed
-#                   how the chart does seem to be levelling out in the recent years. This answers our 
+#                   how the chart does seem to be leveling out in the recent years. This answers our 
 #                   question #2 of if access to handwashing services has increased over time.")
 # 
 
 ```
-Note: Apparently Mynah's chart works on her computer, but it doesn't work on our end. We request some form of leniency for this inconsistency.
+This chart was created to determine the correlation between handwashing access and time. This will help people visualize how handwashing access has developed over the past years. We initially thought that the graph would show very visible positive growth, however, we can now see how their are quite a few dips in the chart that we did not expect.It is observed how the chart does seem to be levelling out in the recent years. This answers our question #2 of if access to handwashing services has increased over time.
+
+## Note: Apparently Mynah's chart works on her computer, but it doesn't work on our end. We request some form of leniency for this inconsistency.
