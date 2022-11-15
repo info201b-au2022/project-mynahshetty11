@@ -1,13 +1,89 @@
 ---
-title: "Your Project Title"
-author: "project team members"
-date: "1/22/2022"
+title: "Water, and its Factors in different Countries"
+author: "- Ryan Louie (rlouie21@uw.edu)
+- Christopher Chen (cmchen22@uw.edu)
+- Sean Lee (seanl6@uw.edu)
+- Mynah Shetty (mshett@uw.edu)"
+date: "11/14/2022"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+## Dynamic Paragraph
+
+## Table
+
+
+## Chart 1
+```{r, echo = FALSE}
+#Cholera data
+cholera <- read.csv("project-mynahshetty11/data/data_cholera_infection_rate.csv")
+
+#Handwashing data
+handwash <- read.csv("project-mynahshetty11/data/data_handwash.csv")
+
+#Population data
+population <- read.csv("project-mynahshetty11/data/data_country_population.csv")
+
+#Convert Years to rows
+population_filtered <- select(population, -c(Country.Code, Indicator.Name, Indicator.Code)) %>%
+                      gather("Year", "Population", -Country.Name)%>%
+                      rename(Country =Country.Name)
+#Rename columns for handwash
+handwash_filtered <- slice(handwash,3:n())
+names(handwash_filtered) <-  paste0(names(handwash_filtered), ",") %>%
+                               str_replace("\\.1,", ", Urban") %>%
+                          str_replace("\\.2,", ", Rural") %>%
+                          str_replace("\\,$", ", Both Rural and Urban")
+
+#Remove Years to actual years
+population_filtered$Year <- strtoi(str_replace(population_filtered$Year, "X", ""))
+
+#Convert handwash years to rows
+handwash_filtered <- rename(handwash_filtered, Countries = "X, Both Rural and Urban") %>%
+                      gather("Year_and_type", "Percent", -Countries) %>%
+                    separate("Year_and_type", into = c("Year","Urban_Rural_or_Both"), sep = ", ")%>%
+                    rename(Country = Countries)
+
+#Convert Percentages to integers
+#String to integer function is from:
+#https://www.tutorialkart.com/r-tutorial/r-convert-string-to-integer/#:~:text=To%20convert%20String%20to%20Integer%20in%20R%20programming%2C%20call%20strtoi,respect%20to%20the%20specified%20base.
+handwash_filtered$Percent <- strtoi(handwash_filtered$Percent)
+handwash_filtered <- filter(handwash_filtered, !is.na(handwash_filtered$Percent))
+
+#Convert Year to actual years
+handwash_filtered$Year <- strtoi(str_replace(handwash_filtered$Year, "X", ""))
+
+#Join handwash_filtered and cholera
+handwash_and_cholera <- inner_join(handwash_filtered, cholera)
+
+#Join handwash_and_cholera with population_filtered, and
+#create Proportion for Cholera Cases divided by Proportion of Sanitation
+final_dataframe <- inner_join(handwash_and_cholera, population_filtered) %>%
+                    mutate(cases_per_population = Number.of.reported.cases.of.cholera / Population * 100)
+
+#Make our ggplot2 chart
+chart_1 <- ggplot(data = final_dataframe, aes(x = Percent, y = cases_per_population)) +
+                    geom_point(alpha = .4, color = "seagreen") +
+                    geom_smooth()+facet_wrap(~Urban_Rural_or_Both) +
+                    xlab("Percentage of People with Access to Clean Services") +
+                    ylab("Reported Cases of Cholera") +
+                  # I got the scales::comma lable from:
+                  #https://stackoverflow.com/questions/52602503/display-an-axis-value-in-millions-in-ggplot
+                  #Square root scale is from:
+                  #https://ggplot2-book.org/scales-guides.html
+                    scale_y_sqrt(labels = scales::comma) +
+                    labs(title = "Access to Clean Services vs Percent of Reported Cases of Cholera per Country Population")
+chart_1
+
+```
+## Chart 2
+
+## Chart 3
+
 
 ## What is this file for?
 
@@ -19,7 +95,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ### Example 1: Source some code and run a function
 ```{r}
 # Example 1: Note relative path, which can be read: Up one
-# directory(..), down into source (/source), and 
+# directory(..), down into source (/source), and
 # then "source" an R file (data_access.R)
 source("../source/data_access.R")
 data_access_test()
@@ -31,9 +107,9 @@ data_access_test()
 msg <- data_access_test(" Morgan!")
 ```
 
-> `r msg` Hope you have a good day!! 
+> `r msg` Hope you have a good day!!
 
-## ABOUT THIS FILE: 
+## ABOUT THIS FILE:
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
