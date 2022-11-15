@@ -329,3 +329,5 @@ p
 
 ## Chart 3
 
+
+The reason for working on this chart is to delve into how poverty can affect access to clean water services. This problem that stems from poverty can result in diseases such as cholera, or symptoms of diarrhea, and other factors. This may also result in health problems, and thus more money spent on those services, continuing and increasing the cycle of poverty. From the graph and data that I analyzed, the companies with the lowest poverty rates ended up having the most access to handwashing. The divide between the average of the lowest poverty rate countries and highest poverty rates was 86.17% compared to 25.21% which is a really big gap. Thus, there needs to be a lot more emphasis on countries that have high poverty rates. The data was not surprising in terms of the condition of the countries and their percentages, but the gap between each condition was alarming to see, especially at the extreme ends of each side.
