@@ -3,8 +3,8 @@ library(ggplot2)
 library(stringr)
 library(tidyr)
 
-poverty <- read.csv("project-mynahshetty11//data/data_poverty.csv")
-handwash <- read.csv("project-mynahshetty11/data/data_handwash.csv")
+poverty <- read.csv("data/data_poverty.csv")
+handwash <- read.csv("data/data_handwash.csv")
 
 handwash_filtered <- slice(handwash,3:n())
 names(handwash_filtered) <-  paste0(names(handwash_filtered), ",") %>%
