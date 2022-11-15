@@ -177,7 +177,9 @@ chart_1
 ```
 
 
-
+This chart was created to access the relation between the percentage of people in a country with access to clean handwashing services and the reported cases of cholera per population of country. Our initial belief was that there would be a negative correlation between the two variables as more access to clean handwashing services
+reduces the risk of diseases. The graph suggests a non-linear
+relationship, but with a general negative trend.
 
 
 ## Chart 2
