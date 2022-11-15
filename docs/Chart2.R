@@ -6,7 +6,7 @@ library(stringr)
 
 # total handwashing with soap
 
-total_handwashing <- data_6_ %>%
+total_handwashing <- read.csv("data/data_handwash.csv" %>%
   select('...1', `2020...2`, `2019...5`, `2018...8`, `2017...11`, `2016...14`, `2015...17`, `2014...20`, `2013...23`, `2012...26`, `2011...29`, `2010...32`, `2009...35`, `2008...38`, `2007...41`, `2006...44`, `2005...47`, `2004...50`, `2003...53`, `2002...56`, `2001...59`)
 total_handwashing<- rename(total_handwashing, countries = '...1')
 total_handwashing <- rename( total_handwashing, '2020' = '2020...2', '2019' = `2019...5`,  '2018' = `2018...8`, '2017' = `2017...11`,  '2016' = `2016...14`, '2015' = `2015...17`, '2014' = `2014...20`, '2013' = `2013...23`, '2012' = `2012...26`, '2011' = `2011...29`, '2010' = `2010...32`, '2009' = `2009...35`, '2008' = `2008...38`, '2007' = `2007...41`, '2006' = `2006...44`, '2005' = `2005...47`, '2004' = `2004...50`, '2003' = `2003...53`, '2002' = `2002...56`, '2001' = `2001...59` )
@@ -43,7 +43,7 @@ total_handwashing_plot <- total_handwashing %>%
   ylab("Percentage of People with Access to Handwashing Services") +
   scale_y_sqrt(labels = scales::comma) + 
   labs(title = "Average total percentage of Handwashing Access per Year",
-       subtitle = "Relationship between Handwashing Service Aaccessibility and Date",
+       subtitle = "Relationship between Handwashing Service Accessibility and Date",
        caption = " This chart was created to determine the correlation between handwashing access and time.
                   This will help people visualize how handwashing access has developed over the past years.
                   We initially thought that the graph would show very visible positive growth, however,
