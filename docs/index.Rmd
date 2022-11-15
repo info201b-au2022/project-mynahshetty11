@@ -65,35 +65,47 @@ handwash_filtered <- filter(handwash_filtered, !is.na(handwash_filtered$Percent)
 #Convert Year to actual years
 handwash_filtered$Year <- strtoi(str_replace(handwash_filtered$Year, "X", ""))
 
-#Join handwash_filtered and cholera
-handwash_and_cholera <- inner_join(handwash_filtered, cholera)
+#Join handwash_filtered and cholera and filter for max date
+handwash_and_cholera <- inner_join(handwash_filtered, cholera) %>% filter(Year == max(Year))
 
 #Value 1
-maximum_proportion_handwash <- filter(handwash_filtered, handwash_filtered$Percent == max(handwash_filtered$Percent)) %>%
+maximum_proportion_handwash <- handwash_and_cholera %>%filter(Percent == max(Percent)) %>%
   pull(Percent)
 maximum_proportion_handwash <- maximum_proportion_handwash[1]
 
 #Value 2
-max_prop_how_many <- filter(handwash_filtered, handwash_filtered$Percent == max(handwash_filtered$Percent)) %>%
+max_prop_how_many <-  handwash_and_cholera %>% filter(Percent == max(Percent)) %>%
   pull(Country)
 max_prop_how_many <- length(max_prop_how_many)
+
 #Value 3
 avg_prop_poverty <- round((mean(na.omit(poverty$percPoverty))), digits = 2)
 
 #Value 4
-median_cholera_cases  <- round(median(cholera$Number.of.reported.cases.of.cholera, na.rm =TRUE), digits = 2)
+median_cholera_cases  <- round(median(handwash_and_cholera$Number.of.reported.cases.of.cholera, na.rm =TRUE), digits = 2)
 
 #Value 5
-minimum_proportion_handwash <-filter(handwash_filtered, handwash_filtered$Percent == min(handwash_filtered$Percent)) %>%
+minimum_proportion_handwash <-  handwash_and_cholera %>% filter(Percent == min(Percent)) %>%
   pull(Percent)
 minimum_proportion_handwash <- minimum_proportion_handwash[1]
 
 #Value 6
-min_prop_where <- filter(handwash_filtered, handwash_filtered$Percent == min(handwash_filtered$Percent)) %>%
+min_prop_how_many <-  handwash_and_cholera %>% filter(Percent == min(Percent)) %>%
   pull(Country)
-min_prop_where <- length(min_prop_where)
+min_prop_how_many <- length(min_prop_how_many)
 
+#Summary list function
+summary_list <- list()
+summary_list$maximum_proportion_handwash <- maximum_proportion_handwash
+summary_list$max_prop_how_many <- max_prop_how_many
+summary_list$avg_prop_poverty <- avg_prop_poverty
+summary_list$median_cholera_cases <- median_cholera_cases
+summary_list$minimum_proportion_handwash <-minimum_proportion_handwash
+summary_list$min_prop_how_many <- min_prop_how_many
+summary_list$avg_cholera_cases <- round(mean(handwash_and_cholera$Number.of.reported.cases.of.cholera, na.rm =TRUE), digits = 2)
 ```
+
+Our first value of interest was to evaluate the highest proportion of people with access to hand washing in any of the countries as of the most recent date. The highest proportion identified is `r summary_list$maximum_proportion_handwash`. Only `r summary_list$max_prop_how_many` country( or countries) share the highest proportion. Subsequently, the lowest proportion identified is `r summary_list$minimum_proportion_handwash`, with `r summary_list$min_prop_how_many` country (countries) sharing this proportion. The average percentage of poverty throughout the world throughout the years is `r summary_list$avg_prop_poverty`. Finally, the median cholera cases of all the countries as of the most recent year is `r summary_list$median_cholera_cases`, while the average cholera cases of all the countries as of the most recent year is `r summary_list$avg_cholera_cases``.
 ## Table
 ```{r, echo = FALSE}
   #Convert Years to rows
