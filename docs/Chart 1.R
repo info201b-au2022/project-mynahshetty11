@@ -48,19 +48,29 @@ handwash_and_cholera <- inner_join(handwash_filtered, cholera)
 #Join handwash_and_cholera with population_filtered, and
 #create Proportion for Cholera Cases divided by Proportion of Sanitation
 final_dataframe <- inner_join(handwash_and_cholera, population_filtered) %>%
-                    mutate(cases_per_population = Number.of.reported.cases.of.cholera / Population * 100)
+                    mutate(cases_per_population = Number.of.reported.cases.of.cholera / Population * 100) %>%
+                    filter(Year == 2016 | Year == 2015 | Year == 2014 | Year ==2013 | Year == 2012 | Year == 2011| Year == 2010 )
 
 #Make our ggplot2 chart
 chart_1 <- ggplot(data = final_dataframe, aes(x = Percent, y = cases_per_population)) +
                     geom_point(alpha = .4, color = "seagreen") +
                     geom_smooth()+facet_wrap(~Urban_Rural_or_Both) + 
                     xlab("Percentage of People with Access to Clean Services") +
-                    ylab("Reported Cases of Cholera") +
+                    ylab("Reported Cases of Cholera per Population of Country") +
                   # I got the scales::comma lable from:
                   #https://stackoverflow.com/questions/52602503/display-an-axis-value-in-millions-in-ggplot
                   #Square root scale is from:
                   #https://ggplot2-book.org/scales-guides.html
                     scale_y_sqrt(labels = scales::comma) + 
-                    labs(title = "Access to Clean Services vs Percent of Reported Cases of Cholera per Country Population")
-chart_1
+                    labs(title = "Percent of Access to Clean Services vs Percent of Reported Cases of Cholera per Country Population", 
+                        subtitle = "Relationship between clean services and reported cases from 2010 to 2016", 
+                        caption = "This chart was created to access the relation 
+                        between the percentage of people in a country with 
+                        access to clean handwashing services and the reported cases of cholera per population of country. 
+                        Our initial belief was that there would be a negative correlation
+                        between the two variables as more access to clean handwashing services 
+                        reduces the risk of diseases. The graph suggests a non-linear 
+                        relationship, but with a general negative trend.")
 
+                    
+chart_1
