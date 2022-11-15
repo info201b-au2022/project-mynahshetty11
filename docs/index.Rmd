@@ -1,5 +1,5 @@
 ---
-  title: "Water, and its Factors in different Countries"
+title: "Water, and its Factors in different Countries"
 author: "- Ryan Louie (rlouie21@uw.edu)
 - Christopher Chen (cmchen22@uw.edu)
 - Sean Lee (seanl6@uw.edu)
@@ -8,7 +8,7 @@ date: "11/14/2022"
 output: html_document
 ---
 
-  ```{r setup, include=FALSE}
+```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(dplyr)
 library(ggplot2)
@@ -16,51 +16,53 @@ library(stringr)
 library(tidyr)
 
 ```
+```{r load_data}
+  #Cholera data
+cholera <- read.csv("../data/data_cholera_infection_rate.csv")
 
+#Handwashing data
+handwash <- read.csv("../data/data_handwash.csv")
+
+#Population data
+population <- read.csv("../data/data_country_population.csv")
+
+#Diarrhea data
+diarrhea <- read.csv("../data/data_diarrhea_death_rate.csv")
+
+```
 ## Dynamic Paragraph
 
 ## Table
+```{r, echo = FALSE}
 
 
-## Chart 1
-```{r load_data}
-#Cholera data
-cholera <- read.csv("C:/Users/chenc/Documents/info201/reports/project-mynahshetty11/data/data_cholera_infection_rate.csv")
-
-#Handwashing data
-handwash <- read.csv("C:/Users/chenc/Documents/info201/reports/project-mynahshetty11/data/data_handwash.csv")
-
-#Population data
-population <- read.csv("C:/Users/chenc/Documents/info201/reports/project-mynahshetty11/data/data_country_population.csv")
 
 ```
 
 
 
-```{r load_data}
-#Sean Lee Chart 1
 
-
-
-#Convert Years to rows
+## Chart 1
+```{r, echo = FALSE}
+  #Convert Years to rows
 population_filtered <- select(population, -c(Country.Code, Indicator.Name, Indicator.Code)) %>%
-  gather("Year", "Population", -Country.Name)%>%
-  rename(Country =Country.Name)
+                      gather("Year", "Population", -Country.Name)%>%
+                      rename(Country =Country.Name)
 #Rename columns for handwash
 handwash_filtered <- slice(handwash,3:n())
 names(handwash_filtered) <-  paste0(names(handwash_filtered), ",") %>%
-  str_replace("\\.1,", ", Urban") %>%
-  str_replace("\\.2,", ", Rural") %>%
-  str_replace("\\,$", ", Both Rural and Urban")
+                               str_replace("\\.1,", ", Urban") %>%
+                          str_replace("\\.2,", ", Rural") %>%
+                          str_replace("\\,$", ", Both Rural and Urban")
 
 #Remove Years to actual years
 population_filtered$Year <- strtoi(str_replace(population_filtered$Year, "X", ""))
 
 #Convert handwash years to rows
 handwash_filtered <- rename(handwash_filtered, Countries = "X, Both Rural and Urban") %>%
-  gather("Year_and_type", "Percent", -Countries) %>%
-  separate("Year_and_type", into = c("Year","Urban_Rural_or_Both"), sep = ", ")%>%
-  rename(Country = Countries)
+                      gather("Year_and_type", "Percent", -Countries) %>%
+                    separate("Year_and_type", into = c("Year","Urban_Rural_or_Both"), sep = ", ")%>%
+                    rename(Country = Countries)
 
 #Convert Percentages to integers
 #String to integer function is from:
@@ -77,23 +79,23 @@ handwash_and_cholera <- inner_join(handwash_filtered, cholera)
 #Join handwash_and_cholera with population_filtered, and
 #create Proportion for Cholera Cases divided by Proportion of Sanitation
 final_dataframe <- inner_join(handwash_and_cholera, population_filtered) %>%
-  mutate(cases_per_population = Number.of.reported.cases.of.cholera / Population * 100) %>%
-  filter(Year == 2016 | Year == 2015 | Year == 2014 | Year ==2013 | Year == 2012 | Year == 2011| Year == 2010 )
+                    mutate(cases_per_population = Number.of.reported.cases.of.cholera / Population * 100) %>%
+                    filter(Year == 2016 | Year == 2015 | Year == 2014 | Year ==2013 | Year == 2012 | Year == 2011| Year == 2010 )
 
 #Make our ggplot2 chart
 chart_1 <- ggplot(data = final_dataframe, aes(x = Percent, y = cases_per_population)) +
-  geom_point(alpha = .4, color = "seagreen") +
-  geom_smooth()+facet_wrap(~Urban_Rural_or_Both) +
-  xlab("Percentage of People with Access to Clean Services") +
-  ylab("Reported Cases of Cholera per Population of Country") +
-  # I got the scales::comma lable from:
-  #https://stackoverflow.com/questions/52602503/display-an-axis-value-in-millions-in-ggplot
-  #Square root scale is from:
-  #https://ggplot2-book.org/scales-guides.html
-  scale_y_sqrt(labels = scales::comma) +
-  labs(title = "Percent of Access to Clean Services vs Percent of Reported Cases of Cholera per Country Population",
-       subtitle = "Relationship between clean services and reported cases from 2010 to 2016",
-       caption = "This chart was created to access the relation
+                    geom_point(alpha = .4, color = "seagreen") +
+                    geom_smooth()+facet_wrap(~Urban_Rural_or_Both) +
+                    xlab("Percentage of People with Access to Clean Services") +
+                    ylab("Reported Cases of Cholera per Population of Country") +
+                  # I got the scales::comma lable from:
+                  #https://stackoverflow.com/questions/52602503/display-an-axis-value-in-millions-in-ggplot
+                  #Square root scale is from:
+                  #https://ggplot2-book.org/scales-guides.html
+                    scale_y_sqrt(labels = scales::comma) +
+                    labs(title = "Percent of Access to Clean Services vs Percent of Reported Cases of Cholera per Country Population",
+                        subtitle = "Relationship between clean services and reported cases from 2010 to 2016",
+                        caption = "This chart was created to access the relation
                         between the percentage of people in a country with
                         access to clean handwashing services and the reported cases of cholera per population of country.
                         Our initial belief was that there would be a negative correlation
@@ -105,8 +107,11 @@ chart_1 <- ggplot(data = final_dataframe, aes(x = Percent, y = cases_per_populat
 chart_1
 
 
-
 ```
+
+
+
+
 
 ## Chart 2
 
@@ -137,13 +142,13 @@ msg <- data_access_test(" Morgan!")
 
 > `r msg` Hope you have a good day!!
 
-  ## ABOUT THIS FILE:
+## ABOUT THIS FILE:
 
-  This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-  ```{r cars}
+```{r cars}
 summary(cars)
 ```
 
@@ -151,7 +156,7 @@ summary(cars)
 
 You can also embed plots, for example:
 
-  ```{r pressure, echo=FALSE}
+```{r pressure, echo=FALSE}
 plot(pressure)
 ```
 
