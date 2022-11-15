@@ -49,4 +49,4 @@ total_handwashing_plot <- total_handwashing %>%
                   we can now see how their are quite a few dips in the chart that we did not expect.It is observed
                   how the chart does seem to be levelling out in the recent years. This answers our 
                   question #2 of if access to handwashing services has increased over time.")
-
+total_handwashing_plot
