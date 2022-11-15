@@ -33,19 +33,40 @@ poverty_df <- data.frame(poverty_df$percPoverty, poverty)
 poverty_df$percPoverty <- as.double(poverty_df$percPoverty)
 
 
+handwash_df <- handwash_filtered %>% mutate(no = (100 - handwash_filtered$Percent)) 
+View(handwash_df)
+
 poverty.df <- poverty_df %>% mutate(
 country_type = ifelse(poverty_df$percPoverty  < 10,"rich", ifelse(poverty_df$percPoverty < 20 & poverty_df$percPoverty > 10,  
-    "poor", ifelse(poverty_df$percPoverty < 30 & poverty_df$percPoverty > 20, "slightly poor", ifelse(poverty_df$percPoverty < 40 & 
-    poverty_df$percPoverty > 30, " very poor", "extremely poor"))))
+    "average", ifelse(poverty_df$percPoverty < 30 & poverty_df$percPoverty > 20, "slightly poor", ifelse(poverty_df$percPoverty < 40 & 
+    poverty_df$percPoverty > 30, "poor", "extremely poor"))))
  )
 
+poverty.df <- poverty.df %>% 
+  rename("Country" = "country")
 
+merge <- inner_join(poverty.df, handwash_df)
 
-p <-(ggplot(data= poverty.df, aes(x=country_type, y= dataYear)) +
-       geom_bar(stat="identity"))
+View(merge)
+View(poverty.df)
+
+merge <- merge %>%group_by(country_type) %>%
+summarise(Percent = mean(Percent))
+merge <- arrange(merge, Percent)
+View(merge)
+
+merge %>%filter(!is.na(country_type))
+
+p<-ggplot(data= na.omit(merge), aes(x=country_type, y=Percent)) +
+  geom_bar(stat="identity", fill = " dark green") +
+ 
+  xlab("Country Condition based on Poverty Rates") +
+  ylab("Percentage of the Country that has Access to Handwashing") +
+   scale_y_sqrt(labels = scales::comma)  +
+  labs(title = "Percent of Handwashing Availibility in types of Countries", 
+       subtitle = "Relationship between the average handwashing percentage and country types from 2000 to 2020", 
+       caption = "This depicts the average proportion of handwashing in countries based on their classification of their living quality. 
+       This was calculated based on what percentage the country was in poverty." )
 p
 
 
-View(poverty.df)
-
-View(poverty_df)
