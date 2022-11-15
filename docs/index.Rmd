@@ -108,7 +108,7 @@ kable(table)
  
 ```
 
-I chose this table because it represents the countries that have a majority poverty population. I included this table because we can use the information off this table to determine the link between poverty and disease. The information presented on this table include the name of the country, the percentage of poverty in each country, the year the data was collected, and the percentage of population that learn less than 10 dollars a day, and less than 5.50 dollars a day specifically. This table allows us to see the most impovirished countries in the world, which we can use to establish conenctions between widespread economic struggle, and increase of disease rates. 
+I chose this table because it represents the countries that have a majority poverty population. I included this table because we can use the information off this table to determine the link between poverty and disease. The information presented on this table include the name of the country, the percentage of poverty in each country, the year the data was collected, and the percentage of population that learn less than 10 dollars a day, and less than 5.50 dollars a day specifically. This table allows us to see the most impoverished countries in the world, which we can use to establish connections between widespread economic struggle, and increase of disease rates. It also reveals the scope of poverty and its definitions that are used by organizations. There is a trend that the countries with the highest rates of poverty are centered around Africa and the Middle East, and that the vast majority of the populations depicted in the table earn less than 10 USD each day. 
 
 
 ## Chart 1
