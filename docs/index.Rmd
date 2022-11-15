@@ -214,7 +214,6 @@ handwash_filtered <- filter(handwash_filtered, !is.na(handwash_filtered$Percent)
 #Convert Year to actual years
 handwash_filtered$Year <- strtoi(str_replace(handwash_filtered$Year, "X", ""))
 
-(mean(na.omit(poverty$percPoverty)))
 
 
 handwash_filtered <- slice(handwash,3:n())
