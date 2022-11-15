@@ -237,7 +237,6 @@ handwash_filtered <- filter(handwash_filtered, !is.na(handwash_filtered$Percent)
 #Convert Year to actual years
 handwash_filtered$Year <- strtoi(str_replace(handwash_filtered$Year, "X", ""))
 
-(mean(na.omit(poverty$percPoverty)))
 
 poverty_df <- data.frame(poverty$percPoverty, poverty)
 poverty_df <- data.frame(poverty_df$percPoverty, poverty)
@@ -245,7 +244,7 @@ poverty_df$percPoverty <- as.double(poverty_df$percPoverty)
 
 
 handwash_df <- handwash_filtered %>% mutate(no = (100 - handwash_filtered$Percent)) 
-View(handwash_df)
+
 
 poverty.df <- poverty_df %>% mutate(
   country_type = ifelse(poverty_df$percPoverty  < 10,"rich", ifelse(poverty_df$percPoverty < 20 & poverty_df$percPoverty > 10,  
@@ -258,27 +257,12 @@ poverty.df <- poverty.df %>%
 
 merge <- inner_join(poverty.df, handwash_df)
 
-View(merge)
-View(poverty.df)
 
 merge <- merge %>%group_by(country_type) %>%
   summarise(Percent = mean(Percent))
 merge <- arrange(merge, Percent)
-View(merge)
 
 merge %>%filter(!is.na(country_type))
-
-p<-ggplot(data= na.omit(merge), aes(x=country_type, y=Percent)) +
-  geom_bar(stat="identity", fill = " dark green") +
-  
-  xlab("Country Condition based on Poverty Rates") +
-  ylab("Percentage of the Country that has Access to Handwashing") +
-  scale_y_sqrt(labels = scales::comma)  +
-  labs(title = "Percent of Handwashing Availibility in types of Countries", 
-       subtitle = "Relationship between the average handwashing percentage and country types from 2000 to 2020", 
-       caption = "This depicts the average proportion of handwashing in countries based on their classification of their living quality. 
-       This was calculated based on what percentage the country was in poverty." )
-p
 
 
 poverty_df <- data.frame(poverty$percPoverty, poverty)
@@ -287,7 +271,7 @@ poverty_df$percPoverty <- as.double(poverty_df$percPoverty)
 
 
 handwash_df <- handwash_filtered %>% mutate(no = (100 - handwash_filtered$Percent)) 
-View(handwash_df)
+
 
 poverty.df <- poverty_df %>% mutate(
 country_type = ifelse(poverty_df$percPoverty  < 10,"rich", ifelse(poverty_df$percPoverty < 20 & poverty_df$percPoverty > 10,  
@@ -300,13 +284,11 @@ poverty.df <- poverty.df %>%
 
 merge <- inner_join(poverty.df, handwash_df)
 
-View(merge)
-View(poverty.df)
+
 
 merge <- merge %>%group_by(country_type) %>%
 summarise(Percent = mean(Percent))
 merge <- arrange(merge, Percent)
-View(merge)
 
 merge %>%filter(!is.na(country_type))
 
