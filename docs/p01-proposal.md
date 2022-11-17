@@ -73,9 +73,9 @@ This question researches how strong the correlation between proportion of access
 
 We ask this question to research if there is a relation (or correlation) between the proportion of people who are unable to use clean sanitation services in each country and the proportion of children who died from diarrhea related illnesses from their respective country.
 
-### 3. How does poverty affect the proportion of people's ability to afford clean and safely managed sanitation services?
+### 3. Has access to handwashing services increased over time?
 
-We ask this question to assess the strength of the relationship between poverty and hygiene. This helps with addressing the question of what we must do to help increase equitable access to sanitation services, as addressing the issue of poverty may intersect with assisting people's ability to afford hygienic services.
+We ask this question to assess the strength of the relationship between time and access to sanitation services such as handwashing. This helps with addressing the question of if handwashing services are increasing enough over time, as addressing the issue of access to sanitation services may not be increasing enough over time to keep up with growing populations in need.
 
 
 ## The Dataset
