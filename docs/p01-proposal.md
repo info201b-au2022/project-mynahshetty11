@@ -99,6 +99,8 @@ The handwashing data is extremely useful, since it gives information on the prop
 
   * World Health Organization. (n.d.). Gho | by category | number of reported cases - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.175?lang=en
 
+The cholera dataset is useful for research question one, because in order to assess the relationship between accessibility of clean sanitations services and cholera, we need information regarding the cholera cases in each country.
+
 * World Population Review. Poverty Rate by Country 2022. Worldpopulationreview.com. Published 2022.  Retrieved October 31, 2022, from https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
 
 * Population, total. Data Last Updated 9/16/2022. Retrieved November 14, 2022, from https://data.worldbank.org/indicator/SP.POP.TOTL
