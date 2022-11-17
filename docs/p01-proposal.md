@@ -32,8 +32,6 @@ Access to clean water and sanitation is a privilege that most first world countr
 
 ## Problem Domain
 
-Use short sub-sections to describe your topic and the setting (that is, the sociotechnical situation), including project framing, human values, direct and indirect stakeholders, possible harms and benefits. See the Design Brief, section B.3. Note: You must include three citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ). You may find it helpful to include a figure. (About 400 words.)
-
 The sub-sections can be split into:
 
 - Sanitation services
