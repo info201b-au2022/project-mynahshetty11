@@ -69,9 +69,9 @@ For our project, we decided to ask the following questions:
 
 This question researches how strong the correlation between proportion of access to safely managed sanitation services and cholera infection rates.
 
-### 2. What is the relationship between proportion of people without access to clean water, sanitation services and the proportion of children who die from diarrheal diseases?
+### 2. What is the relationship between proportion of people with access to clean water, sanitation services and countries that have different rates of poverty.
 
-We ask this question to research if there is a relation (or correlation) between the proportion of people who are unable to use clean sanitation services in each country and the proportion of children who died from diarrhea related illnesses from their respective country.
+We ask this question to research if there is a relation (or correlation) between the proportion of people who are able to use clean sanitation services in each country and if there is a relation to its poverty rate.
 
 ### 3. Has access to handwashing services increased over time?
 
@@ -103,9 +103,12 @@ The cholera dataset is useful for research question one, because in order to ass
 
 * World Population Review. Poverty Rate by Country 2022. Worldpopulationreview.com. Published 2022.  Retrieved October 31, 2022, from https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
 
+This dataset is needed to calculate and divide countries into different groups based on their poverty rates. We used this to answer question two, in order to find out if there is a correlation between the poverty rate of a country, and if that affects the rate of people having access to handwashing. Because of that, it is very important in providing half the data to answer the question.
+
 * Population, total. Data Last Updated 9/16/2022. Retrieved November 14, 2022, from https://data.worldbank.org/indicator/SP.POP.TOTL
 
 This dataset is needed to calculate proportions for research question one. I used proportions because different countries have different population sizes, so the number of cholera cases relative to the total population would make more sense. If we used the absolute number of cholera cases, larger countries may naturally have more cholera cases.
+
 ## Expected Implications
 
 Assuming that areas that are poverty stricken have less access to clean water, the people in the affected areas have a higher likelihood of being infected with diseases such as cholera or diarrheal disease.
