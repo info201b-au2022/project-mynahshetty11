@@ -32,8 +32,6 @@ Access to clean water and sanitation is a privilege that most first world countr
 
 ## Problem Domain
 
-Use short sub-sections to describe your topic and the setting (that is, the sociotechnical situation), including project framing, human values, direct and indirect stakeholders, possible harms and benefits. See the Design Brief, section B.3. Note: You must include three citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ). You may find it helpful to include a figure. (About 400 words.)
-
 The sub-sections can be split into:
 
 - Sanitation services
@@ -55,7 +53,7 @@ Harm: Through tackling the problems that are associated with water quality, ther
 
 Benefit: A lot of death and sickness can be avoided with better water quality amongst all countries. Overall, a benefit involves ethics, ensuring that clean water is a basic human right. It is the right thing to do to advocate.
 
-Stakeholders: Here are tbe stakeholders:
+Stakeholders: Here are the stakeholders:
 
 * Direct: The people directly affected would be the ones that are using the water systems. This could be families, people, or other inhabitants.
 
@@ -69,13 +67,13 @@ For our project, we decided to ask the following questions:
 
 This question researches how strong the correlation between proportion of access to safely managed sanitation services and cholera infection rates.
 
-### 2. What is the relationship between proportion of people without access to clean water, sanitation services and the proportion of children who die from diarrheal diseases?
+### 2. What is the relationship between proportion of people with access to clean water, sanitation services and countries that have different rates of poverty.
 
-We ask this question to research if there is a relation (or correlation) between the proportion of people who are unable to use clean sanitation services in each country and the proportion of children who died from diarrhea related illnesses from their respective country.
+We ask this question to research if there is a relation (or correlation) between the proportion of people who are able to use clean sanitation services in each country and if there is a relation to its poverty rate.
 
-### 3. How does poverty affect the proportion of people's ability to afford clean and safely managed sanitation services?
+### 3. Has access to handwashing services increased over time?
 
-We ask this question to assess the strength of the relationship between poverty and hygiene. This helps with addressing the question of what we must do to help increase equitable access to sanitation services, as addressing the issue of poverty may intersect with assisting people's ability to afford hygienic services.
+We ask this question to assess the strength of the relationship between time and access to sanitation services such as handwashing. This helps with addressing the question of if handwashing services are increasing enough over time, as addressing the issue of access to sanitation services may not be increasing enough over time to keep up with growing populations in need.
 
 
 ## The Dataset
@@ -93,19 +91,21 @@ data_poverty.csv |      173        |          5          |
 
 
 ### Dataset Citations
-  World Health Organization. (n.d.). Gho | by category | handwashing with SOAP - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.WSHHYGIENE?lang=en
+  * World Health Organization. (n.d.). Gho | by category | handwashing with SOAP - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.WSHHYGIENE?lang=en
 
-  World Health Organization. (n.d.). Gho | by category | open defecation - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.WSHOPENDEFECATION?lang=en
+The handwashing data is extremely useful, since it gives information on the proportion of people in each country that has access to clean sanitation services. We use this data for all three research questions, as they require information about how accessible clean sanitation services are in each country.
 
-  World Health Organization. (n.d.). Gho | by category | number of reported cases - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.175?lang=en
+  * World Health Organization. (n.d.). Gho | by category | number of reported cases - data by country. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/node.main.175?lang=en
 
-  World Health Organization. (n.d.). Gho | by category | rate of deaths by country - diarrhoeal diseases. World Health Organization. Retrieved October 31, 2022, from https://apps.who.int/gho/data/view.main.ghe2002015-CH3?lang=en
+The cholera dataset is useful for research question one, because in order to assess the relationship between accessibility of clean sanitations services and cholera, we need information regarding the cholera cases in each country.
 
-  Poverty rate by country 2022. (n.d.). Retrieved October 31, 2022, from https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
+* World Population Review. Poverty Rate by Country 2022. Worldpopulationreview.com. Published 2022.  Retrieved October 31, 2022, from https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
 
-World Population Review. Poverty Rate by Country 2022. Worldpopulationreview.com. Published 2022.  Retrieved October 31, 2022, from https://worldpopulationreview.com/country-rankings/poverty-rate-by-country
+This dataset is needed to calculate and divide countries into different groups based on their poverty rates. We used this to answer question two, in order to find out if there is a correlation between the poverty rate of a country, and if that affects the rate of people having access to handwashing. Because of that, it is very important in providing half the data to answer the question.
 
-Population, total. Data Last Updated 9/16/2022. Retrieved November 14, 2022, from https://data.worldbank.org/indicator/SP.POP.TOTL
+* Population, total. Data Last Updated 9/16/2022. Retrieved November 14, 2022, from https://data.worldbank.org/indicator/SP.POP.TOTL
+
+This dataset is needed to calculate proportions for research question one. I used proportions because different countries have different population sizes, so the number of cholera cases relative to the total population would make more sense. If we used the absolute number of cholera cases, larger countries may naturally have more cholera cases.
 
 ## Expected Implications
 

@@ -108,7 +108,7 @@ kable(table)
  
 ```
 
-I chose this table because it represents the countries that have a majority poverty population. I included this table because we can use the information off this table to determine the link between poverty and disease. The information presented on this table include the name of the country, the percentage of poverty in each country, the year the data was collected, and the percentage of population that learn less than 10 dollars a day, and less than 5.50 dollars a day specifically. This table allows us to see the most impovirished countries in the world, which we can use to establish conenctions between widespread economic struggle, and increase of disease rates. 
+I chose this table because it represents the countries that have a majority poverty population. I included this table because we can use the information off this table to determine the link between poverty and disease. The information presented on this table include the name of the country, the percentage of poverty in each country, the year the data was collected, and the percentage of population that learn less than 10 dollars a day, and less than 5.50 dollars a day specifically. This table allows us to see the most impoverished countries in the world, which we can use to establish connections between widespread economic struggle, and increase of disease rates. It also reveals the scope of poverty and its definitions that are used by organizations. There is a trend that the countries with the highest rates of poverty are centered around Africa and the Middle East, and that the vast majority of the populations depicted in the table earn less than 10 USD each day. 
 
 
 ## Chart 1
@@ -185,6 +185,53 @@ relationship, but with a general negative trend.
 
 
 ## Chart 2
+
+
+```{r, echo = FALSE, message = FALSE}
+#Rename columns for handwash
+handwash_for_chart_two <- slice(handwash,3:n())
+names(handwash_for_chart_two) <-  paste0(names(handwash_for_chart_two), ",") %>%
+  str_replace("\\.1,", ", Urban") %>%
+  str_replace("\\.2,", ", Rural") %>%
+  str_replace("\\,$", ", Both Rural and Urban")
+handwash_for_chart_two <- rename(handwash_for_chart_two, Countries = "X, Both Rural and Urban") %>%
+  gather("Year_and_type", "Percent", -Countries) %>%
+  separate("Year_and_type", into = c("Year","Urban_Rural_or_Both"), sep = ", ")%>%
+  rename(Country = Countries)
+#Convert Percentages to integers
+#String to integer function is from:
+#https://www.tutorialkart.com/r-tutorial/r-convert-string-to-integer/#:~:text=To%20convert%20String%20to%20Integer%20in%20R%20programming%2C%20call%20strtoi,respect%20to%20the%20specified%20base.
+handwash_for_chart_two$Percent <- strtoi(handwash_for_chart_two$Percent)
+handwash_for_chart_two <- filter(handwash_for_chart_two, !is.na(handwash_for_chart_two$Percent))
+
+#Convert Year to actual years
+handwash_for_chart_two$Year <- strtoi(str_replace(handwash_for_chart_two$Year, "X", ""))
+
+handwash_for_chart_two <- handwash_for_chart_two %>%  filter(Urban_Rural_or_Both == "Both Rural and Urban") %>%
+                                            group_by(Year) %>%
+                                            summarize(Percent = mean(Percent))
+total_handwashing_plot <- handwash_for_chart_two %>%
+  ggplot(aes(x = Year, y = Percent)) + 
+  geom_line(alpha = .4, color = "seagreen") + 
+  xlab("Date") +
+  ylab("Percentage of People with Access to Handwashing Services") +
+  scale_y_sqrt(labels = scales::comma) + 
+  labs(title = "Average total percentage of Handwashing Access per Year",
+       subtitle = "Relationship between Handwashing Service Accessibility and Date",
+       caption = " This chart was created to determine the correlation between handwashing access and time.
+                  This will help people visualize how handwashing access has developed over the past years.
+                  We initially thought that the graph would show very visible positive growth, however,
+                  we can now see how their are quite a few dips in the chart that we did not expect.It is observed
+                  how the chart does seem to be levelling out in the recent years. This answers our 
+                  question #2 of if access to handwashing services has increased over time.")
+
+total_handwashing_plot
+
+```
+
+This chart was created to determine the correlation between handwashing access and time. This will help people visualize how handwashing access has developed over the past years. We initially thought that the graph would show very visible positive growth, however, we can now see how their are quite a few dips in the chart that we did not expect.It is observed how the chart does seem to be levelling out in the recent years. This answers our question #2 of if access to handwashing services has increased over time.
+
+## Chart 3
 ```{r, echo = FALSE, message = FALSE}
 library(dplyr)
 library(ggplot2)
@@ -214,7 +261,6 @@ handwash_filtered <- filter(handwash_filtered, !is.na(handwash_filtered$Percent)
 #Convert Year to actual years
 handwash_filtered$Year <- strtoi(str_replace(handwash_filtered$Year, "X", ""))
 
-(mean(na.omit(poverty$percPoverty)))
 
 
 handwash_filtered <- slice(handwash,3:n())
@@ -238,7 +284,6 @@ handwash_filtered <- filter(handwash_filtered, !is.na(handwash_filtered$Percent)
 #Convert Year to actual years
 handwash_filtered$Year <- strtoi(str_replace(handwash_filtered$Year, "X", ""))
 
-(mean(na.omit(poverty$percPoverty)))
 
 poverty_df <- data.frame(poverty$percPoverty, poverty)
 poverty_df <- data.frame(poverty_df$percPoverty, poverty)
@@ -246,7 +291,7 @@ poverty_df$percPoverty <- as.double(poverty_df$percPoverty)
 
 
 handwash_df <- handwash_filtered %>% mutate(no = (100 - handwash_filtered$Percent)) 
-View(handwash_df)
+
 
 poverty.df <- poverty_df %>% mutate(
   country_type = ifelse(poverty_df$percPoverty  < 10,"rich", ifelse(poverty_df$percPoverty < 20 & poverty_df$percPoverty > 10,  
@@ -259,27 +304,12 @@ poverty.df <- poverty.df %>%
 
 merge <- inner_join(poverty.df, handwash_df)
 
-View(merge)
-View(poverty.df)
 
 merge <- merge %>%group_by(country_type) %>%
   summarise(Percent = mean(Percent))
 merge <- arrange(merge, Percent)
-View(merge)
 
 merge %>%filter(!is.na(country_type))
-
-p<-ggplot(data= na.omit(merge), aes(x=country_type, y=Percent)) +
-  geom_bar(stat="identity", fill = " dark green") +
-  
-  xlab("Country Condition based on Poverty Rates") +
-  ylab("Percentage of the Country that has Access to Handwashing") +
-  scale_y_sqrt(labels = scales::comma)  +
-  labs(title = "Percent of Handwashing Availibility in types of Countries", 
-       subtitle = "Relationship between the average handwashing percentage and country types from 2000 to 2020", 
-       caption = "This depicts the average proportion of handwashing in countries based on their classification of their living quality. 
-       This was calculated based on what percentage the country was in poverty." )
-p
 
 
 poverty_df <- data.frame(poverty$percPoverty, poverty)
@@ -288,7 +318,7 @@ poverty_df$percPoverty <- as.double(poverty_df$percPoverty)
 
 
 handwash_df <- handwash_filtered %>% mutate(no = (100 - handwash_filtered$Percent)) 
-View(handwash_df)
+
 
 poverty.df <- poverty_df %>% mutate(
 country_type = ifelse(poverty_df$percPoverty  < 10,"rich", ifelse(poverty_df$percPoverty < 20 & poverty_df$percPoverty > 10,  
@@ -301,13 +331,11 @@ poverty.df <- poverty.df %>%
 
 merge <- inner_join(poverty.df, handwash_df)
 
-View(merge)
-View(poverty.df)
+
 
 merge <- merge %>%group_by(country_type) %>%
 summarise(Percent = mean(Percent))
 merge <- arrange(merge, Percent)
-View(merge)
 
 merge %>%filter(!is.na(country_type))
 
@@ -323,16 +351,8 @@ p<-ggplot(data= na.omit(merge), aes(x=country_type, y=Percent)) +
        This was calculated based on what percentage the country was in poverty." )
 p
 
-## Paragraph
-
-The reason for working on this chart is to delve into how poverty can affect access to clean water services. This problem that stems from poverty can result in diseases such as cholera, or symptoms of diarrhea, and other factors. This may also result in health problems, and thus more money spent on those services, continuing and increasing the cycle of poverty. From the graph and data that I analyzed, the companies with the lowest poverty rates ended up having the most access to handwashing. The divide between the average of the lowest poverty rate countries and highest poverty rates was 86.17% compared to 25.21% which is a really big gap. Thus, there needs to be a lot more emphasis on countries that have high poverty rates. The data was not surprising in terms of the condition of the countries and their percentages, but the gap between each condition was alarming to see, especially at the extreme ends of each side.
 
 
 
 ```
-
-
-## Chart 3
-
-
-
+The reason for working on this chart is to delve into how poverty can affect access to clean water services. This problem that stems from poverty can result in diseases such as cholera, or symptoms of diarrhea, and other factors. This may also result in health problems, and thus more money spent on those services, continuing and increasing the cycle of poverty. From the graph and data that I analyzed, the companies with the lowest poverty rates ended up having the most access to handwashing. The divide between the average of the lowest poverty rate countries and highest poverty rates was 86.17% compared to 25.21% which is a really big gap. Thus, there needs to be a lot more emphasis on countries that have high poverty rates. The data was not surprising in terms of the condition of the countries and their percentages, but the gap between each condition was alarming to see, especially at the extreme ends of each side.
