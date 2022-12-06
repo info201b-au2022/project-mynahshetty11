@@ -31,6 +31,15 @@ ui <- navbarPage(
   ),
   page_three <- tabPanel(
     "Interactive Page 2"
+select_values = colnames(merge)
+sidebar_content <- sidebarPanel(
+  selectInput(
+    "year",
+    label = "Year",
+    choices = poverty.df$dataYear,
+    selected = "percPoverty"
+  )
+    
   ),
   page_four <- tabPanel(
     "Summary Takeaways",
