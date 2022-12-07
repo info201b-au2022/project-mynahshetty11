@@ -30,17 +30,24 @@ ui <- navbarPage(
     "Interactive Page 1"
   ),
   page_three <- tabPanel(
-    "Interactive Page 2"
-select_values = colnames(merge)
-sidebar_content <- sidebarPanel(
-  selectInput(
-    "year",
-    label = "Year",
-    choices = poverty.df$dataYear,
-    selected = "percPoverty"
-  )
-    
-  ),
+    "Interactive Page 2: Poverty Research Question",
+    h3("Answers the Question: "),
+    h4("What is the relationship between proportion of people with access to clean water, sanitation services and countries that have different rates of poverty?"),
+    select_values = colnames(merge),
+    sidebar_content <- sidebarPanel(
+      selectInput(
+        "Year",
+        label = "Year",
+        choices = merge$Year,
+        selected = "percPoverty"
+      ), plotOutput(outputId = "chart")),
+    mainPanel(  h3("Purpose of the chart"),
+                p("This chart answers the research question in looking at trends amongst different types of countries dealing with poverty. It is important to note how every year, the data and handwashing
+                  access fluctuates. Overall, rich countries had the most access to handwashing. However, an interesting note is that in 2008, there the most handwashing
+                  access was countries with 'average' rates of poverty. The most consistent was extremely poor and poor countries in the bottom percentages of handwashing access. 
+                  In 2020, handwashing access for rich country was above 80%, compared to extremely poor country being below 25% in access. This raises alarms in
+                  the huge wealth gap. Handwashing access should be a human right, and should be prioritized when helping countries and people in need.")
+                )),
   page_four <- tabPanel(
     "Summary Takeaways",
     #img
