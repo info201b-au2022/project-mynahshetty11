@@ -2,7 +2,7 @@
 library(dplyr)
 library(shiny)
 library(plotly)
-
+library(ggplot2)
 # data cleaning handwash and poverty files 
 
 poverty <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-mynahshetty11/main/data/data_poverty.csv")
@@ -73,20 +73,26 @@ merge <- inner_join(poverty.df, handwash_df)
 merge %>%filter(!is.na(country_type))
 
 
+merge <- na.omit(merge)
+
+
 
 # chart number two
 server <- shinyServer(
   function(input, output) {
-    # assign values to `output` here
+# assign values to `output` here
     merge_df <- reactive({
-      req(input$year)
-      react_df <- merge %>% filter(year %in% input$year) %>% group_by(country_type) %>% summarise(percent = mean(percent)) 
+      req(input$Year)
+      react_df <- merge %>% filter(Year %in% input$Year) %>% group_by(country_type) %>% summarise(Percent = (mean((Percent)))) 
     })
-    
-    output$plot <- renderPlot({
-      ggplot(data = merge_df(), aes_string(x = "country_type", y = "percent", fill = 'country_type')) + 
-        geom_bar(stat = "identity", width = 0.5) + labs(x = "Country Type", y = "Percent of country with access to handwashing")
-  
+    output$chart <- renderPlot({
+       ggplot(data = merge_df(), aes_string(x = "country_type", y = "Percent", fill = 'country_type')) + 
+        geom_bar(stat = "identity", width = 0.5) + labs(x = "Country Type", y = "Percent of Countries with Access to Handwashing", fill = "Country Type") +  
+        labs(title = "Percent of Handwashing Availibility in types of Countries Per Year",
+      caption = "Caption: This depicts the average proportion per year of 
+      handwashing in countries based on their classification of their living quality. 
+      This was calculated based on what percentage the country was in poverty." )
     })
   }
 )
+
