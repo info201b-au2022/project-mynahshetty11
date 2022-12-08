@@ -89,12 +89,14 @@ ui <- navbarPage(
     titlePanel("Introduction"),
     img(src = 'world.gif', align = "left"),
     mainPanel(
-      h2("Project Overview"),
+      h2("Project Overview",
+         style = "font-weight:500; color: #4d3a7d"),
       p("Our group decided to research the correlation between access to clean sanitation methods, and diagnosis of disease I countries with different levels of poverty. We decided on this topic because we felt that it is important to address how poor sanitation services can greatly affect people’s health in countries that don’t have the money to afford these services. So, as a group, we wanted to ask questions to be able to find the root of sanitation issues so that we can be a step closer to finding potential solutions.  We chose to use variables such as proportion of people without access to clean water in each country, proportion of people infected with cholera by country, and poverty rate. We used these variables because we hypothesized that countries with higher poverty rates would have less access to clean sanitation services, and therefore higher rates of cholera infection. "),
       img(src = 'image1.jpeg', align = "left"),
       p("This image is of a woman carrying jerrycans of water from a municipal water pipe of an illegal slum dwelling area in the Indian state of Uttar Pradesh, where the water and sanitation services are lacking."),
       
-      h2("Major Questions"),
+      h2("Major Questions",
+         style = "font-weight:500; color: #4d3a7d"),
       
       p("1. What is the relationship between proportion of people with access to clean water, sanitation services and countries that have different rates of poverty?"),
       p("2. Has access to handwashing increased over time?"), 
@@ -104,17 +106,22 @@ ui <- navbarPage(
       
       
       
-      h2("Data We Used"),
-      h3("Handwash"),
+      h2("Data We Used",
+         style = "font-weight:500; color: #4d3a7d"),
+      h3("Handwash",
+         style = "font-weight:500; color: red"),
       p("The handwashing data that we used gives us the proportion of people in each country that has access to cleas sanitation services.
         We were able to use this dataset in all three of our questions because they all require data about sanitation service availability by country"),
       p("Link : https://apps.who.int/gho/data/node.main.WSHHYGIENE?lang=en"),
       
-      h3("Cholera") ,
+      h3("Cholera",
+         style = "font-weight:500; color: blue") ,
       p(" The Cholera dataset was used to help answer question one. It helped us access the correlation between access to clean sanitation services, and cholera infection cases by country."),
       p("Link : https://apps.who.int/gho/data/node.main.175?lang=en"),
       
-      h3("Poverty Rates"),
+      h3("Poverty Rates",
+         style = "font-weight:500; color: green" ),
+        
       p("This dataset was used to divide countries in to groups based off of their poverty rates.
         We used this data in question two to research the correlation between poverty rates of each country, and its effects on access to clean sanitation services"),
       p("Link: https://worldpopulationreview.com/country-rankings/poverty-rate-by-country"),
