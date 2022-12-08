@@ -37,7 +37,7 @@ server <- shinyServer(
     
     
     #Chart 1
-    merge_df <- reactive({
+    merge_df1 <- reactive({
       req(input$Year)
       react_df <- handwash_df%>%
         filter(Urban_Rural_or_Both == "Both Rural and Urban")%>%
@@ -47,7 +47,7 @@ server <- shinyServer(
     })
     output$plot <- renderPlotly({
       ggplotly(
-        ggplot(data = merge_df(), aes(x = Year, y = Percent))+
+        ggplot(data = merge_df1(), aes(x = Year, y = Percent))+
           geom_bar(stat = "identity", fill = "red")+
           ggtitle(input$Country) +
           xlab("Year")+
