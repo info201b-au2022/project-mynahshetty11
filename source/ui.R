@@ -93,11 +93,11 @@ ui <- navbarPage(
       p("Our group decided to research the correlation between access to clean sanitation methods, and diagnosis of disease I countries with different levels of poverty. We decided on this topic because we felt that it is important to address how poor sanitation services can greatly affect people’s health in countries that don’t have the money to afford these services. So, as a group, we wanted to ask questions to be able to find the root of sanitation issues so that we can be a step closer to finding potential solutions.  We chose to use variables such as proportion of people without access to clean water in each country, proportion of people infected with cholera by country, and poverty rate. We used these variables because we hypothesized that countries with higher poverty rates would have less access to clean sanitation services, and therefore higher rates of cholera infection. "),
       img(src = 'image1.jpeg', align = "left"),
       p("This image is of a woman carrying jerrycans of water from a municipal water pipe of an illegal slum dwelling area in the Indian state of Uttar Pradesh, where the water and sanitation services are lacking."),
-     
+      
       h2("Major Questions"),
       p("1. What is the relationship between proportion of people without access to clean water, sanitation services and the proportion of people who get infected with cholera?"),
       p("2. What is the relationship between proportion of people with access to clean water, sanitation services and countries that have different rates of poverty?"), 
-     
+      
       
       h2("Data We Used"),
       h3("Handwash"),
@@ -118,7 +118,7 @@ ui <- navbarPage(
       p("This dataset was used to calculate the proportions that are used in research question 1. We used proportions to account for differences in populaton sizes. So, we found the number of hcolera cases
         relative to population size. This is because, if we used total number of cholera cases, bigger countries will likely have a higher amount of cholera cases."),
       p("Link : https://data.worldbank.org/indicator/SP.POP.TOTL")
-  )),
+    )),
   page_two <- tabPanel(
     "Interactive Page 1: Handwashing Increase Question",
     h3("Answers the Question: "),
@@ -127,9 +127,14 @@ ui <- navbarPage(
       sidebarPanel(
         selectInput("Country", "Choose a Country:",
                     choices = unique(merge1$Country)),
-  
+        
       ),
       mainPanel(
+        h3("Purpose of this chart"),
+        p("This chart answers the research question looking to answer the quesiton if handwashing rates have increased over time. In order to calculate this, I decided to split this data between different countries between 2000 and 2020. 
+          This is an important statistic because a lack of access to handwashing is linked to the spread of deadly diseases. Based on the data, handwashing rates generally stagnated or
+          increased slightly for most countries. The handwashing rates for the countries in the data set ranged from 6 percent, to 99 percent in 2022, showing the vast disparity in 
+          between nations in terms of access to reliable handwashing access. "),
         plotlyOutput("plot"),
         br(),
         div(tags$em(strong("Caption:"), "This chart represents the value of handwashing of each country for each year")
@@ -154,20 +159,19 @@ ui <- navbarPage(
                   access was countries with 'average' rates of poverty. The most consistent was extremely poor and poor countries in the bottom percentages of handwashing access. 
                   In 2020, handwashing access for rich country was above 80%, compared to extremely poor country being below 25% in access. This raises alarms in
                   the huge wealth gap. Handwashing access should be a human right, and should be prioritized when helping countries and people in need.")
-                )),    
+    )),    
   page_four <- tabPanel( "Summary Takeaways",
-      #img
-      h1("Summary"),
-      p(""),
-      h3("Take Away 1: "),
-      p(""),
-      h3("Take Away 2: "),
-      p(""),
-      h3("Take Away 3: "),
-      p("")
-    ),
-    page_five <- tabPanel(
-      "Report Page"
-    )
+                         #img
+                         h1("Summary"),
+                         p(""),
+                         h3("Take Away 1: "),
+                         p(""),
+                         h3("Take Away 2: "),
+                         p(""),
+                         h3("Take Away 3: "),
+                         p("")
+  ),
+  page_five <- tabPanel(
+    "Report Page"
   )
-
+)
