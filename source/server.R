@@ -37,13 +37,17 @@ server <- shinyServer(
     
     
     #Chart 1
-    output$plot <- renderPlotly({
-      data_handwash <- handwash_filtered%>%
-        filter(Country == input$Country, Year >= input$Year[1], Year <= input$Year[2])%>%
+    merge_df <- reactive({
+      req(input$Year)
+      react_df <- handwash_df%>%
+        filter(Urban_Rural_or_Both == "Both Rural and Urban")%>%
+        filter(Country == input$Country, Year >= 2000, Year <= 2020)%>%
         select(Year, Percent)
       
+    })
+    output$plot <- renderPlotly({
       ggplotly(
-        ggplot(data_handwash, aes(x = Year, y = Percent))+
+        ggplot(data = merge_df(), aes(x = Year, y = Percent))+
           geom_bar(stat = "identity", fill = "red")+
           ggtitle(input$Country) +
           xlab("Year")+

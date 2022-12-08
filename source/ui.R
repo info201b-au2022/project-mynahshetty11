@@ -118,9 +118,7 @@ ui <- navbarPage(
       sidebarPanel(
         selectInput("Country", "Choose a Country:",
                     choices = unique(merge1$Country)),
-        sliderInput("Year", "Choose the years:",
-                    min = 2000, max = 2020,
-                    value = c(2000,2020))
+  
       ),
       mainPanel(
         plotlyOutput("plot"),
