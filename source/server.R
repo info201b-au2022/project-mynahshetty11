@@ -3,19 +3,20 @@ library(dplyr)
 library(shiny)
 library(plotly)
 library(ggplot2)
-
+source("ui.R")
 options(scipen = 100)
 poverty <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-mynahshetty11/main/data/data_poverty.csv")
 handwash <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-mynahshetty11/main/data/data_handwash.csv")
 # chart number two
-merge <- na.omit(merge)
+
+
 
 server <- shinyServer(
   function(input, output) {
 # assign values to `output` here
     merge_df <- reactive({
       req(input$Year)
-      react_df <- merge %>% filter(Year %in% input$Year) %>% group_by(country_type) %>% summarise(Percent = (mean((Percent)))) 
+      react_df <- merge1 %>% filter(Year %in% input$Year) %>% group_by(country_type) %>% summarise(Percent = (mean((Percent)))) 
     })
     output$chart <- renderPlot({
        ggplot(data = merge_df(), aes_string(x = "country_type", y = "Percent", fill = 'country_type')) + 

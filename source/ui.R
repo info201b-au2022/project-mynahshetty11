@@ -71,6 +71,9 @@ poverty.df <- poverty.df %>%
 
 merge <- inner_join(poverty.df, handwash_df)
 merge %>%filter(!is.na(country_type))
+merge1 <- na.omit(merge)
+View(merge)
+
 
 
 ## ui 
