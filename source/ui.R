@@ -170,7 +170,10 @@ ui <- navbarPage(
                   access fluctuates. Overall, rich countries had the most access to handwashing. However, an interesting note is that in 2008, there the most handwashing
                   access was countries with 'average' rates of poverty. The most consistent was extremely poor and poor countries in the bottom percentages of handwashing access. 
                   In 2020, handwashing access for rich country was above 80%, compared to extremely poor country being below 25% in access. This raises alarms in
-                  the huge wealth gap. Handwashing access should be a human right, and should be prioritized when helping countries and people in need."), plotlyOutput(outputId = "chart")
+                  the huge wealth gap. Handwashing access should be a human right, and should be prioritized when helping countries and people in need."), plotlyOutput(outputId = "chart"),
+     div(tags$em(strong("Caption:"), "This depicts the average proportion per year of 
+                          handwashing in countries based on their classification of their living quality. 
+                          This was calculated based on what percentage the country was in poverty."))
     )),    
   page_four <- tabPanel( "Summary Takeaways",
                          
