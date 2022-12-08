@@ -7,6 +7,14 @@ source("ui.R")
 options(scipen = 100)
 poverty <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-mynahshetty11/main/data/data_poverty.csv")
 handwash <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-mynahshetty11/main/data/data_handwash.csv")
+# chart number one
+
+
+
+
+
+
+
 # chart number two
 
 
@@ -26,5 +34,23 @@ server <- shinyServer(
       handwashing in countries based on their classification of their living quality. 
       This was calculated based on what percentage the country was in poverty." )
     })
+    
+    
+    #Chart 1
+    output$plot <- renderPlotly({
+      data_handwash <- handwash_filtered%>%
+        filter(Country == input$Country, Year >= input$Year[1], Year <= input$Year[2])%>%
+        select(Year, Percent)
+      
+      ggplotly(
+        ggplot(data_handwash, aes(x = Year, y = Percent))+
+          geom_bar(stat = "identity", fill = "red")+
+          ggtitle(input$Country) +
+          xlab("Year")+
+          ylab("Percent of handwashing availible")
+      )
+    }) 
   }
+  
+
 )

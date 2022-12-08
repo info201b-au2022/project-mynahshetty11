@@ -4,6 +4,7 @@ library(stringr)
 library(tidyr)
 library(shiny)
 library(stringr)
+library(plotly)
 
 poverty <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-mynahshetty11/main/data/data_poverty.csv")
 handwash <- read.csv("https://raw.githubusercontent.com/info201b-au2022/project-mynahshetty11/main/data/data_handwash.csv")
@@ -72,7 +73,7 @@ poverty.df <- poverty.df %>%
 merge <- inner_join(poverty.df, handwash_df)
 merge %>%filter(!is.na(country_type))
 merge1 <- na.omit(merge)
-View(merge)
+
 
 
 
@@ -110,8 +111,24 @@ ui <- navbarPage(
     )
   ),
   page_two <- tabPanel(
-    "Interactive Page 1"
-  ),
+    "Interactive Page 1: Handwashing Increase Question",
+    h3("Answers the Question: "),
+    h4("Has access to handwashing improved over time?"),
+    sidebarLayout(
+      sidebarPanel(
+        selectInput("Country", "Choose a Country:",
+                    choices = unique(merge1$Country)),
+        sliderInput("Year", "Choose the years:",
+                    min = 2000, max = 2020,
+                    value = c(2000,2020))
+      ),
+      mainPanel(
+        plotlyOutput("plot"),
+        br(),
+        div(tags$em(strong("Caption:"), "This chart represents the value of handwashing of each country for each year")
+        )
+      )
+    )),
   page_three <- tabPanel(
     "Interactive Page 2: Poverty Research Question",
     h3("Answers the Question: "),
@@ -144,4 +161,5 @@ ui <- navbarPage(
     ),
     page_five <- tabPanel(
       "Report Page"
-    ))
+    )
+  )

@@ -1,6 +1,7 @@
 library(shiny)
 library(ggplot2)
 library(rsconnect)
+library(plotly)
 source("ui.R")
 source("server.R")
 shinyApp(ui, server = server)
