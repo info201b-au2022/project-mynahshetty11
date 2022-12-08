@@ -121,6 +121,11 @@ ui <- navbarPage(
   
       ),
       mainPanel(
+        h3("Purpose of this chart"),
+        p("This chart answers the research question looking to answer the quesiton if handwashing rates have increased over time. In order to calculate this, I decided to split this data between different countries between 2000 and 2020. 
+          This is an important statistic because a lack of access to handwashing is linked to the spread of deadly diseases. Based on the data, handwashing rates generally stagnated or
+          increased slightly for most countries. The handwashing rates for the countries in the data set ranged from 6 percent, to 99 percent in 2022, showing the vast disparity in 
+          between nations in terms of access to reliable handwashing access. "),
         plotlyOutput("plot"),
         br(),
         div(tags$em(strong("Caption:"), "This chart represents the value of handwashing of each country for each year")
