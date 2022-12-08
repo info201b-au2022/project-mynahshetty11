@@ -95,13 +95,13 @@ ui <- navbarPage(
       p("This image is of a woman carrying jerrycans of water from a municipal water pipe of an illegal slum dwelling area in the Indian state of Uttar Pradesh, where the water and sanitation services are lacking."),
       
       h2("Major Questions"),
-
+      
       p("1. What is the relationship between proportion of people with access to clean water, sanitation services and countries that have different rates of poverty?"),
       p("2. Has access to handwashing increased over time?"), 
-
+      
       p("1. What is the relationship between proportion of people without access to clean water, sanitation services and the proportion of people who get infected with cholera?"),
       p("2. What is the relationship between proportion of people with access to clean water, sanitation services and countries that have different rates of poverty?"), 
-
+      
       
       
       h2("Data We Used"),
@@ -154,26 +154,26 @@ ui <- navbarPage(
     sidebar_content <- sidebarPanel(
       selectInput(
         "Year",
-        label = "Year",
+        label = "Choose a year",
         choices = merge$Year,
         selected = "percPoverty"
-      ), plotOutput(outputId = "chart")),
-    mainPanel(  h3("Purpose of the chart"),
+      )),
+    mainPanel(h3("Purpose of the chart"),
                 p("This chart answers the research question in looking at trends amongst different types of countries dealing with poverty. It is important to note how every year, the data and handwashing
                   access fluctuates. Overall, rich countries had the most access to handwashing. However, an interesting note is that in 2008, there the most handwashing
                   access was countries with 'average' rates of poverty. The most consistent was extremely poor and poor countries in the bottom percentages of handwashing access. 
                   In 2020, handwashing access for rich country was above 80%, compared to extremely poor country being below 25% in access. This raises alarms in
-                  the huge wealth gap. Handwashing access should be a human right, and should be prioritized when helping countries and people in need.")
+                  the huge wealth gap. Handwashing access should be a human right, and should be prioritized when helping countries and people in need."), plotlyOutput(outputId = "chart")
     )),    
   page_four <- tabPanel( "Summary Takeaways",
-
+                         
                          h1("Summary"),
                          p("Through our summary, we were able to find answers to our two main questions and clarify trends between access to handwashing/ clean water, sanitation services and poverty rates. Firstly, “Has access to handwashing improved over time?”.  We used the handwashing data for this chart as, lack of handwashing services is commonly linked to the spread of disease. We found that the handwashing rates for all countries either stayed stagnant or increased. In our second question, “What is the relationship between proportion of people with access to clean water, sanitation services and countries that have different rates of poverty?”. By using the handwashing data and the poverty proportions data we were able to visualize how, overall, rich countries have the most access to handwashing services. We also observed, how the least fluctuations in the data were found in poor and extremely poor countries having the least access to handwashing services. Through our summary, we were able to address both of our questions and learn more about handwashing accessibility, and poverty rates."),
                          h3("Take Away 1: "),
                          p("In the chart on handwashing access over time, we can see that for all countries handwashing access has either stayed stagnant or increased over time. As, the chart is either uniform or increasing. This allows users to see how over time handwashing access is not getting worse, and overall, most countries are improving access to handwashing services, as they receive the funds to do so."),
                          h3("Take Away 2: "),
                          p("In the chart on the relationship between proportion of people with access to clean water, sanitation services and countries that have different poverty rates, a major takeaway is how the poor and extremely poor categories of countries consistently have the least access to handwashing. And, unfortunately, over time, these categories are not observed to be increasing enough to catch up to the other levels of poverty. This an example of how the wealth gap is directly affecting the health and wellbeing of people who fall under poverty."),
-                        img(src = 'image4.jpeg', align = "left")
+                         img(src = 'image4.jpeg', align = "left")
   ),
   page_five <- tabPanel(
     "Report Page",
@@ -182,6 +182,5 @@ ui <- navbarPage(
     img(src = 'image8.png', align = "left"),
     img(src = 'image9.png', align = "left"),
     img(src = 'image10.png', align = "left")
-  
+    
   ))
-  
